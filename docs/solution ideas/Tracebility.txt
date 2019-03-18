@@ -1,0 +1,5 @@
+
+- Every submission to analysis tool is time stamped.
+- Show bugs fixed / new bugs introduced
+- Revert option for every submission ( this could help user to ty alternative approach of fixing a certain bug )
+
