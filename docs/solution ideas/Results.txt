@@ -1,0 +1,5 @@
+
+- Bug List ( Column - tool icons)
+- Bug filter
+- Old/ New Bugs - Total Bugs
+- Categorise ( ex. Security, Memory consumption etc)
