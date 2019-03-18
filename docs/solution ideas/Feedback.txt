@@ -1,0 +1,6 @@
+
+- Percent bar for each bug in bug list
+- if user other screen, right bottom with latest bug fixed attempt been seen by percent bar
+- popup 'Try Again' and 'Cancel'
+- Bug removed from list, - 'decision pending' status beside bug, better animation make believe system running
+- Long time tool result check if Short time tool reported bug fixed in after time.
