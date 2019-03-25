@@ -31,15 +31,16 @@
 
 % start with the titlepage, the formalities, and then the abstract
 \input{pretext/titlepage} % prints the title page
+\let\cleardoublepage\clearpage
 \input{pretext/erklaerung} % prints the statement that you worked on your own and did not commit plagiarism
-\cleardoublepage
+\clearpage
 \vspace*{\fill}
 \begin{abstract}
 	\input{abstract}
 \end{abstract}
 \acresetall
 \vspace*{\fill}
-\emptypage
+\let\cleardoublepage\clearpage
 
 \tableofcontents % prints the table of contents
 
@@ -52,8 +53,7 @@
 % include the bibliography, and add it as a chapter the table of contents
 \newpage
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{alpha}
-\bibliography{literature.bib}
+\printbibliography 
 
 
 %%%%%%%%%

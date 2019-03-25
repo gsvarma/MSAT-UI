@@ -34,16 +34,12 @@
 	keywords = {Gamification, Integrated Environments, Program analysis},
 } 
 
-@misc{B,
-	abstract = {Balsamiq is the company behind Balsamiq Wireframes, the industry standard low-fidelity wireframing tool.},
-	year = {18/01/2019},
+@online{B,
 	title = {Balsamiq. Rapid, effective and fun wireframing software. | Balsamiq},
-	url = {https://balsamiq.com/},
-	keywords = {balsamiq;design;HCI;interaction design;interface;UI;UI Design;usability;User Eperience;UX;wireframes},
-	urldate = {19/01/2019}
+	url = {https://balsamiq.com/}
 }
 
-@misc{A19,
+@online{A19,
 	abstract = {GrammaTech is committed to working on the open standard, SARIF and soon-to-be SASP as part of an open tool-analysis ecosystem, supported by a US government program named STAMP whose goal is to fund the modernization of static analysis tools. GrammaTech's goal is to strongly promote the use and adoption of both SARIF and SASP. Once there is a specification of the protocol, we will explore mechanisms for formal standardization and wider promulgation.},
 	author = {Anderson, Paul},
 	title = {Static Analysis Results: A Format and a Protocol: SARIF {\&} SASP},
@@ -51,10 +47,381 @@
 	urldate = {19/01/2019}
 }
 
-@misc{UX,
-	abstract = {If there's an occupation that is 100{\%} linked with the public's idea of what design is all about, it's graphic design. From the familiar golden arches of the McDonald's brand to the typography and colo...},
-	year = {18/03/2019},
+@online{UXD,
 	title = {How to Change Your Career from Graphic Design to UX Design},
-	url = {https://www.interaction-design.org/literature/article/how-to-change-your-career-from-graphic-design-to-ux-design},
-	urldate = {18/03/2019}
+	url =  {https://www.interaction-design.org/literature/article/how-to-change-your-career-from-graphic-design-to-ux-design}	
+}
+
+@article{Denning,
+	author = {Denning, Dorothy E.},
+	title = {A Lattice Model of Secure Information Flow},
+	journal = {Commun. ACM},
+	issue_date = {May 1976},
+	volume = {19},
+	number = {5},
+	month = {may},
+	year = {1976},
+	issn = {0001-0782},
+	pages = {236--243},
+	numpages = {8},
+	url = {http://doi.acm.org/10.1145/360051.360056},
+	doi = {10.1145/360051.360056},
+	acmid = {360056},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {information flow, lattice, program certification, protection, security, security class},
+} 
+
+@online{OWASP,
+	year = {18/03/2019},
+	title = {Static Code Analysis - OWASP},
+	url = {https://www.owasp.org/index.php/Static_Code_Analysis},
+	urldate = {24/03/2019}
+}
+
+@online{Woegerer,
+	title = {A Survey of Static Program Analysis Techniques},
+	url = {https://www.ics.uci.edu/~lopes/teaching/inf212W12/readings/Woegerer-progr-analysis.pdf},
+	urldate = {24/03/2019}
+}
+
+
+@online{UX,
+	title = {The Definition of User Experience (UX)},
+	url =  {https://www.nngroup.com/articles/definition-user-experience/}	
+}
+
+@article{Xie,
+	author = {Xie, Yichen and Aiken, Alex},
+	title = {Saturn: A Scalable Framework for Error Detection Using Boolean Satisfiability},
+	journal = {ACM Trans. Program. Lang. Syst.},
+	issue_date = {May 2007},
+	volume = {29},
+	number = {3},
+	month = may,
+	year = {2007},
+	issn = {0164-0925},
+	articleno = {16},
+	url = {http://doi.acm.org/10.1145/1232420.1232423},
+	doi = {10.1145/1232420.1232423},
+	acmid = {1232423},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Boolean satisfiability, Program analysis, error detection}
+} 
+
+@inproceedings{iSaturn,
+	author = {Mudduluru, Rashmi	and Ramanathan, Murali Krishna},
+	editor = {Gnesi, Stefania and Rensink, Arend},
+	title = {Efficient Incremental Static Analysis Using Path Abstraction},
+	booktitle= {Fundamental Approaches to Software Engineering},
+	year = {2014},
+	publisher = {Springer Berlin Heidelberg},
+	address = {Berlin, Heidelberg},
+	pages = {125--139},
+	abstract = {Incremental static analysis involves analyzing changes to a version of a source code along with analyzing code regions that are semantically affected by the changes. Existing analysis tools that attempt to perform incremental analysis can perform redundant computations due to poor abstraction. In this paper, we design a novel and efficient incremental analysis algorithm for reducing the overall analysis time. We use a path abstraction that encodes different paths in the program as a set of constraints. The constraints encoded as boolean formulas are input to a SAT solver and the (un)satisfiability of the formulas drives the analysis further. While a majority of boolean formulas are similar across multiple versions, the problem of finding their equivalence is graph isomorphism complete. We address a relaxed version of the problem by designing efficient memoization techniques to identify equivalence of boolean formulas to improve the performance of the static analysis engine. Our experimental results on a number of large codebases (upto 87 KLoC) show a performance gain of upto 32{\%} when incremental analysis is used. The overhead associated with identifying equivalence of boolean formulas is less (not more than 8.4{\%}) than the overall reduction in analysis time.},
+	isbn = {978-3-642-54804-8}
+}
+
+@inproceedings{JIT,
+	author = {Do, Lisa Nguyen Quang and Ali, Karim and Livshits, Benjamin and Bodden, Eric and Smith, Justin and Murphy-Hill, Emerson},
+	title = {Just-in-time Static Analysis},
+	booktitle = {Proceedings of the 26th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+	series = {ISSTA 2017},
+	year = {2017},
+	isbn = {978-1-4503-5076-1},
+	location = {Santa Barbara, CA, USA},
+	pages = {307--317},
+	numpages = {11},
+	url = {http://doi.acm.org/10.1145/3092703.3092705}, 
+	doi = {10.1145/3092703.3092705},
+	acmid = {3092705},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Just-in-Time, Layered analysis, Static analysis}
+} 
+
+@misc{colleran,
+	title={Responsive user interface to manage a non-responsive application},
+	author={Colleran, John David and Bermudez, Gerardo and Gorokhovky, Vadim},
+	year={2005},
+	month= {feb},
+	publisher={Google Patents},
+	note={US Patent 6,850,257}
+}
+
+@misc{nn,
+	abstract = {How users react to delays in a user interface, whether website or application. The 3 main response time limits are determined by human perceptual abilities.},
+	title = {Response Time Limits: Article by Jakob Nielsen},
+	url = {https://www.nngroup.com/articles/response-times-3-important-limits/},
+	keywords = {busy cursor;delays;direct manipulation;fast;fast UI;feedback;latency;percent-done indicator;response time;responsiveness;slow;slow UI;speed},
+	urldate = {24/03/2019}
+}
+
+@book{Borman,
+	author = {Borman, Lorraine},
+	year = {1985},
+	title = {Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+	url = {http://dl.acm.org/citation.cfm?id=317456},
+	keywords = {Computer science},
+	address = {New York, NY},
+	publisher = {ACM},
+	isbn = {0897911490},
+	institution = {ACM Special Interest Group on Computer-Human Interaction}
+}
+
+@online{checkmarx,
+	abstract = {Checkmarx is a provider of state-of-the-art application security solution: static code analysis software, seamlessly integrated into development process.},
+	title = {Checkmarx -- Application Security Testing and Static Code Analysis},
+	url = {https://www.checkmarx.com/},
+	urldate = {24/03/2019}
+}
+
+@inproceedings{stack,
+	title={An empirical study on developer interactions in StackOverflow},
+	author={Wang, Shaowei and Lo, David and Jiang, Lingxiao},
+	booktitle={Proceedings of the 28th Annual ACM Symposium on Applied Computing},
+	pages={1019--1024},
+	year={2013},
+	organization={ACM}
+}
+
+@inproceedings{Treude.2011,
+	abstract = {2011 33rd International Conference on Software Engineering (ICSE);2011; ; ;10.1145/1985793.1985907},
+	author = {Treude, Christoph and Barzilay, Ohad and Storey, Margaret-Anne},
+	title = {How do programmers ask and answer questions on the web?},
+	pages = {804},
+	publisher = {{ACM Press}},
+	isbn = {9781450304450},
+	editor = {Taylor, Richard N. and Gall, Harald and Medvidovi{\'c}, Nenad},
+	booktitle = {Proceeding of the 33rd international conference on Software engineering - ICSE '11},
+	year = {2011},
+	address = {New York, New York, USA},
+	doi = {10.1145/1985793.1985907}
+}
+
+@inproceedings{Dix,
+	author = {Dix, Alan and Cowgill, Rachel and Bashford, Christina and McVeigh, Simon and Ridgewell, Rupert},
+	title = {Spreadsheets as User Interfaces},
+	pages = {192--195},
+	publisher = {{ACM Press}},
+	isbn = {9781450341318},
+	editor = {Costabile, Maria Francesca and Buono, Paolo and Matera, Maristella and Buono, Paolo and Lanzilotti, Rosa and Matera, Maristella},
+	booktitle = {Proceedings of the International Working Conference on Advanced Visual Interfaces - AVI '16},
+	year = {2016},
+	address = {New York, New York, USA},
+	doi = {10.1145/2909132.2909271}
+}
+
+@inproceedings{Gaur,
+	abstract = {-  Information systems  -{\textgreater}  Data access methods; Physical data models; Data scans; Point lookups; Query optimization;},
+	author = {Gaur, Garima and Kalra, Sumit and Bhattacharya, Arnab},
+	title = {Patterns for Indexing Large Datasets},
+	keywords = {Hierarchical structure;High-dimensional datasets;Indexing},
+	pages = {1--6},
+	publisher = {{ACM Press}},
+	isbn = {9781450363877},
+	editor = {Unknown},
+	booktitle = {Proceedings of the 23rd European Conference on Pattern Languages of Programs  - EuroPLoP '18},
+	year = {2018},
+	address = {New York, New York, USA},
+	doi = {10.1145/3282308.3282314}
+}
+
+@inproceedings{Ruan,
+	abstract = {2016 International Conference on Identification, Information and Knowledge in the Internet of Things (IIKI);2016; ; ;10.1109/IIKI.2016.20},
+	author = {Ruan, Shanshan and El-Ashram, Saeed and Mahmood, Zahid and Mehmood, Rashid and Ahmad, Waqas},
+	title = {Density Peaks Clustering for Complex Datasets},
+	pages = {87--92},
+	publisher = {IEEE},
+	isbn = {978-1-5090-5952-2},
+	booktitle = {2016 International Conference on Identification, Information and Knowledge in the Internet of Things (IIKI)},
+	year = {20/10/2016 - 21/10/2016},
+	doi = {10.1109/IIKI.2016.20}
+}
+
+@inproceedings{horning,
+	title={What the compiler should tell the user},
+	author={Horning, James J},
+	booktitle={Compiler Construction},
+	pages={525--548},
+	year={1974},
+	organization={Springer}
+}
+
+@inproceedings{Sun,
+	abstract = {2016 IEEE/ACM 38th International Conference on Software Engineering (ICSE);2016; ; ;10.1145/2884781.2884879},
+	author = {Sun, Chengnian and Le, Vu and Su, Zhendong},
+	title = {Finding and analyzing compiler warning defects},
+	pages = {203--213},
+	publisher = {{ACM Press}},
+	isbn = {9781450339001},
+	editor = {Dillon, Laura and Visser, Willem and Williams, Laurie},
+	booktitle = {Proceedings of the 38th International Conference on Software Engineering - ICSE '16},
+	year = {2016},
+	address = {New York, New York, USA},
+	doi = {10.1145/2884781.2884879}
+}
+
+@article{Yannis,
+	abstract = {Objects, Models, Components, Patterns},
+	author = {Yannis Lilis and Anthony Savidis},
+	title = {LNCS 7304 - Supporting Compile-Time Debugging and Precise Error Reporting in Meta-programs}
+}
+
+@inproceedings{Stahl,
+	abstract = {2016 42th Euromicro Conference on Software Engineering and Advanced Applications (SEAA);2016; ; ;10.1109/SEAA.2016.12},
+	author = {Stahl, Daniel and Hallen, Kristofer and Bosch, Jan},
+	title = {Continuous Integration and Delivery Traceability in Industry: Needs and Practices},
+	pages = {68--72},
+	publisher = {IEEE},
+	isbn = {978-1-5090-2820-7},
+	booktitle = {2016 42th Euromicro Conference on Software Engineering and Advanced Applications (SEAA)},
+	year = {31/08/2016 - 02/09/2016},
+	doi = {10.1109/SEAA.2016.12}
+}
+
+@inproceedings{Beller,
+	abstract = {2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)},
+	author = {Beller, Moritz and Gousios, Georgios and Zaidman, Andy},
+	title = {Oops, My Tests Broke the Build: An Explorative Analysis of Travis CI with GitHub},
+	pages = {356--367},
+	publisher = {IEEE},
+	isbn = {978-1-5386-1544-7},
+	booktitle = {2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)},
+	year = {20/05/2017 - 21/05/2017},
+	doi = {10.1109/MSR.2017.62}
+}
+
+@inproceedings{Gallaba,
+	abstract = {-  Software and its engineering  -{\textgreater}  Software verification and validation; Software post-development issues;},
+	author = {Gallaba, Keheliya and Macho, Christian and Pinzger, Martin and McIntosh, Shane},
+	title = {Noise and heterogeneity in historical build data: an empirical study of Travis CI},
+	keywords = {Automated Builds;Build Breakage;Continuous Integration},
+	pages = {87--97},
+	publisher = {{ACM Press}},
+	isbn = {9781450359375},
+	editor = {Huchard, Marianne and K{\"a}stner, Christian and Fraser, Gordon},
+	booktitle = {Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering  - ASE 2018},
+	year = {2018},
+	address = {New York, New York, USA},
+	doi = {10.1145/3238147.3238171}
+}
+
+@inproceedings{Widder,
+	abstract = {continuous integration, travis, tool abaondonment, tool choice, GitHub},
+	author = {Widder, David Gray and Hilton, Michael and K{\"a}stner, Christian and Vasilescu, Bogdan},
+	title = {I'm leaving you, Travis},
+	pages = {165--169},
+	publisher = {{ACM Press}},
+	isbn = {9781450357166},
+	editor = {Zaidman, Andy and Kamei, Yasutaka and Hill, Emily},
+	booktitle = {Proceedings of the 15th International Conference on Mining Software Repositories  - MSR '18},
+	year = {2018},
+	address = {New York, New York, USA},
+	doi = {10.1145/3196398.3196422}
+}
+
+@book{dustinca,
+	author = {dustinca},
+	year = {2008},
+	title = {Proceedings of the 2nd Workshop on Refactoring Tools},
+	url = {http://dl.acm.org/citation.cfm?id=1636642},
+	keywords = {Computer science},
+	address = {New York, NY},
+	publisher = {ACM},
+	isbn = {9781605583396},
+	institution = {{ACM Special Interest Group on Programming Languages}}
+}
+
+@inproceedings{Hayashi,
+	abstract = {2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER);2015; ; ;10.1109/SANER.2015.7081858},
+	author = {Hayashi, Shinpei and Hoshino, Daiki and Matsuda, Jumpei and Saeki, Motoshi and Omori, Takayuki and Maruyama, Katsuhisa},
+	title = {Historef: A tool for edit history refactoring},
+	pages = {469--473},
+	publisher = {IEEE},
+	isbn = {978-1-4799-8469-5},
+	booktitle = {2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER)},
+	year = {02/03/2015 - 06/03/2015},
+	doi = {10.1109/SANER.2015.7081858}
+}
+
+@inproceedings{Mealy,
+	abstract = {2007 Australian Software Engineering Conference (ASWEC'07);2007; ; ;10.1109/ASWEC.2007.24},
+	author = {Mealy, Erica and Carrington, David and Strooper, Paul and Wyeth, Peta},
+	title = {Improving Usability of Software Refactoring Tools},
+	pages = {307--318},
+	publisher = {IEEE},
+	isbn = {0-7695-2778-7},
+	booktitle = {2007 Australian Software Engineering Conference (ASWEC'07)},
+	year = {10/04/2007 - 13/04/2007},
+	doi = {10.1109/ASWEC.2007.24}
+}
+
+@inproceedings{Pinto,
+	author = {Pinto, Gustavo H. and Kamei, Fernando},
+	title = {What programmers say about refactoring tools?},
+	pages = {33--36},
+	publisher = {{ACM Press}},
+	isbn = {9781450326049},
+	editor = {Murphy-Hill, Emerson and Schaefer, Max},
+	booktitle = {Proceedings of the 2013 ACM workshop on Workshop on refactoring tools - WRT '13},
+	year = {2013},
+	address = {New York, New York, USA},
+	doi = {10.1145/2541348.2541357}
+}
+
+@inproceedings{Baysal,
+	abstract = {FSE 2014},
+	author = {Baysal, Olga and Holmes, Reid and Godfrey, Michael W.},
+	title = {No issue left behind: reducing information overload in issue tracking},
+	keywords = {Developer dashboards;information needs;issue tracking;personalization;situational awareness},
+	pages = {666--677},
+	publisher = {{ACM Press}},
+	isbn = {9781450330565},
+	editor = {Cheung, Shing-Chi and Orso, Alessandro and Storey, Margaret-Anne},
+	booktitle = {Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering - FSE 2014},
+	year = {2014},
+	address = {New York, New York, USA},
+	doi = {10.1145/2635868.2635887}
+}
+
+@inproceedings{Jayarajah,
+	abstract = {SoftwareMining 2016},
+	author = {Jayarajah, Kasthuri and Radhakrishnan, Meera and Zakaria, Camellia},
+	title = {Duplicate issue detection for the Android open source project},
+	keywords = {Android Open Source Project;Duplicate Issue Detection;LDA;VSM},
+	pages = {24--31},
+	publisher = {{ACM Press}},
+	isbn = {9781450345118},
+	editor = {Li, Ming and Wang, Xiaoyin and Lucia},
+	booktitle = {Proceedings of the 5th International Workshop on Software Mining - SoftwareMining 2016},
+	year = {2016},
+	address = {New York, New York, USA},
+	doi = {10.1145/2975961.2975965}
+}
+
+@inproceedings{Raza,
+	abstract = {Eighth International Conference on Digital Information Management (ICDIM 2013);2013; ; ;10.1109/ICDIM.2013.6694005},
+	author = {Raza, Arif and Capretz, Luiz Fernando and Ahmed, Faheem},
+	title = {Maintenance support in open source software projects},
+	pages = {391--395},
+	publisher = {IEEE},
+	isbn = {978-1-4799-0615-4},
+	booktitle = {Eighth International Conference on Digital Information Management (ICDIM 2013)},
+	year = {10/09/2013 - 12/09/2013},
+	doi = {10.1109/ICDIM.2013.6694005}
+}
+
+@online{gamify,
+	abstract = {Gamification from University of Pennsylvania. Gamification is the application of game elements and digital game design techniques to non-game problems, such as business and social impact challenges. This course will teach you the mechanisms of ...},
+	title = {Gamification | Coursera},
+	url = {https://www.coursera.org/learn/gamification},
+	urldate = {24/03/2019}
+}
+
+@online{usability,
+	title = {Usability Engineering : Book by Jakob Nielsen},
+	url = {https://www.nngroup.com/books/usability-engineering/},
+	urldate = {24/03/2019}
 }
