@@ -1,7 +1,8 @@
 # Master Thesis
 
 **Author**: Sandeep Varma Ganaraju <br />
-**Advisors**: Prof. Dr. Eric Bodden, Ms Lisa Nguyen <br />
+**Advisors**: Prof. Dr. Eric Bodden, Dr.-Ing. Ben Hermann <br />
+**Supervisor**: Ms Lisa Nguyen <br />
 [ *Working Title* ] **Topic**: Responsiveness in Static Analysis Tools <br />
 
 [Proposal document](https://github.com/gsvarma/SAT-Responsive/blob/master/latex/proposal/thesis.pdf)
