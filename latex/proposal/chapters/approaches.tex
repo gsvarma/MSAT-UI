@@ -15,14 +15,14 @@ For every Research Question, the user scenario is formulated and what usual Stat
 
 
 Here is an example of how the implementation approach could get started. \\ \\
-
-\textbf{Research Question}: How to display results from the same codebase from different analysis tools? \\ \\
+\section{Research Question 1}
+\textbf{How to display results from the same codebase from different analysis tools?} \\ \\
 
 \textbf{Solution ideas}: \\ \\
 1. Display results separately for each tool \\
 2. Combine the results and mark its respective icon in a column to indicate which tool identified the certain bug. \\ \\
 
-With above-mentioned solution ideas, two different prototypes are designed using a wireframe tool called Balsamiq \cite{B}. Assume the name \textit{toolShort} mean a Static Analysis tool capable of giving results in short time and \text{toolLong} mean a Static Analysis tool gives results after long time. \\ \\
+With above-mentioned possible solution ideas, two different prototypes are designed using a wireframe tool called Balsamiq \cite{B}. Assume the name \textit{toolShort} mean a Static Analysis tool capable of giving results in short time and \text{toolLong} mean a Static Analysis tool gives results after long time. \\ \\
 
 \textbf{Prototype 1}: \\ \\
 
@@ -45,6 +45,61 @@ The prototype for solution idea i.e., combining the results is shown in followin
 	\includegraphics[width=\linewidth]{figures/d_combine}
 	\caption{An interface prototype with tools displaying results combined.}
 	\label{fig:toolCombine}
+\end{figure}
+
+\section{Research Question 2}
+\textbf{ What feedback works to know that the bug fixing is on-going?} \\ \\
+
+\textbf{Solution ideas}: \\ \\
+1. Once the user attempts to fix a bug and submit for analysis, then the bug is shown as pending in status. \\
+2. If the bug is fixed then it is shown as 'fixed' in status, or else, 'try again'. \\
+
+With the above mentioned possible solution ideas, the prototypes are designed. The first prototype \ref{fig:d_pending} illustrates a bug being displayed as 'pending' in the status column of bug listing. This happens when a user selects a bug and attempts to fix it then submit for analysis tools. Perhaps the shorter tool i.e., the tool capable of analysing in less computation time would report back whether the bug is fixed or not. Thereby, the Prototype 2 \ref{fig:d_tryagain} illustrates the bug is not fixed and shown as 'try again' in status column as the user attempted to fix earlier. \\ \\
+
+Also, in Prototype 1 it is observed that 'Fix Now' button in 'Bug Description' window is disabled which also depicts the bug is being analysed in the background. \\ \\
+
+\textbf{Prototype 1}
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/d_pending}
+	\caption{An interface prototype showing pending status.}
+	\label{fig:d_pending}
+\end{figure}
+
+\textbf{Prototype 2}
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/d_tryagain}
+	\caption{An interface prototype showing 'try again' status.}
+	\label{fig:d_tryagain}
+\end{figure}
+
+\section{Research Question 3} 
+
+\textbf{ How to carry traceability of bug fixing?}
+\\ \\
+\textbf{Solution ideas}: \\
+1. a time stamp for each bug fixing attempt with changes button \\
+2. a Revert button \\ \\
+
+With the above mentioned possible ideas, the prototypes are designed. The first prototype i.e., Prototype 1 \ref{fig:d_changes} illustrates there is a time stamp for each bug fixing attempt which might help in the context of traceability as to know when someone trying to mitigate a bug. Also, a button 'Changes' could perhaps show the code difference to the previous state of the codebase. The other prototype i.e., Prototype 2 \ref{fig:d_revert} illustrates in a situation where the user wants to revert back to the previous situation of the codebase. This could perhaps help in a situation when new bugs are introduced with an attempt to fix a certain bug.
+
+\textbf{Prototype 1}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/d_changes}
+	\caption{An interface prototype showing time stamp and changes button.}
+	\label{fig:d_changes}
+\end{figure}
+
+\textbf{Prototype 2}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/d_revert}
+	\caption{An interface prototype showing revert button.}
+	\label{fig:d_revert}
 \end{figure}
 
 \let\cleardoublepage\clearpage
