@@ -9,7 +9,7 @@ In the last few years, we see the enormous increase in the usage of Software. We
 
 Static Analysis falls under the category White-box testing. It tests the Software without executing the code and therefore the name means it. On the other side, there are tools testing with a mechanism by executing the code which is called Dynamic testing. Static Analysis is also called as Source Code Analysis. The uses of static analysis tools are compiler optimization, coding support and detection of security vulnerabilities and bugs etc. \cite{deca}. It reports bugs such as Injections, Cross Site Scripting (XSS), Buffer Overflow, and Dead Code etc. \cite{bugs} There are different techniques followed for analysing Source Code. One example as Data Flow Analysis, it tests the source code by dividing into basic blocks \cite{Woegerer}. Here is an example; a php program as seen below is divided into blocks and each block is considered as one node.
 
-\begin{lstlisting}[language=PHP][frame=single]
+\begin{lstlisting}[showstringspaces=false, language=PHP][frame=single]
 
 $a = 0;
 $b = 1;
@@ -26,35 +26,94 @@ echo "a and b are different";
 
 \end{lstlisting}
 
-Thereafter, a path is formed by connecting the nodes along the control flow as seen in the following graph. \\
+Thereafter, a path is formed by connecting the nodes along the control flow as seen in the graph. \ref{fig:CFG} \\
+
+\begin{figure}
+\centering
 
 \begin{tikzpicture}
 
 \begin{scope}[every node/.style={circle,thick,draw}]
-\node (node 5) at (1.5,0) {node 5};
-\node (node 4) at (0,4) {node 4};
-\node (node 3) at (3,3) {node 3};
-\node (node 1) at (1.5,8) {node 1};
-\node (node 2) at (3,5.5) {node 2};
+\node (node 1) at (4,8) {if (a == b)};
+\node[rectangle] (node 2) at (0,4) {echo "a and b are the same"};
+\node[rectangle] (node 3) at (8,4) {echo "a and b are different"};
+\node[circle,minimum size=2cm] (node 4) at (4,0) {}; 
 \end{scope}
 
 \begin{scope}
-\path [->] (node 1) edge node {} (node 2);
-\path [->] (node 2) edge node[right] {} (node 3);
-\path [->] (node 3) edge node[right] {} (node 5);
-\path [->] (node 1) edge node[right] {} (node 4);
-\path [->] (node 4) edge node[right] {} (node 5);
+\draw [->] (4,12) -- (node 1);
+\path [->] (node 1) edge node[right] {} (node 2);
+\path [->] (node 2) edge node[right] {} (node 4);
+\path [->] (node 1) edge node[right] {} (node 3);
+\path [->] (node 3) edge node[right] {} (node 4);
+\draw [->] (node 4) -- (4,-2);
+
 \end{scope}
 
-\end{tikzpicture} \\
+\end{tikzpicture} 
 
-Another example, it tests whether the variables are tainted along the path from Source where the input is provided by the user or untrustworthy and reaches Sink i.e., end of the path without sanitizing the variable. This is called Taint Analysis. It is also called Information Flow Analysis where Information Flow is defined by Dorothy Denning \cite{Denning} as “Information flows from object x to object y, denoted x $\rightarrow$ y , whenever information stored in x is transferred to, object y.” Thereby, the tainted objects are recognised along the flow and depict which are vulnerable. So, overall Static Analysis has great importance in maintaining the quality of code and bug-free before the code went into the production phase. \\
+\caption{Control Flow Graph}
+\label{fig:CFG}
+\end{figure} 
 
-The Static Analysis tools using incremental approach are based on the idea that recalculates only the part of the solution that has been modified by the change in program instead of applying complete original algorithm again. Barbara et. al. introduces ACINCF which is incremental update algorithm for forward data flow analysis and ACINCB for backward data flow analysis. Incremental Static Analysis method was patented by Kalman et al. in the year 2012. \\
-
-The other advanced approach is Layered Static Analysis patented by Cifuentes et al. in the following year 2013, after Incremental Static Analysis is patented. It is a method which helps in reducing the part of source code having potential bugs. It selects part of Static program analysis in an order of less time required to more for each iteration and slowly eradicating the bug free code. \\
 
 There are different kinds of tools available for doing static code analysis such as IDE Notifications, IDE tools, Dedicated tools, Linters and CLI tools. Out of which, the Dedicated tools and CLI tools are more likely to report security vulnerabilities, whereas others are more likely to report coding style issues. 
+
+\section{Deduction Research Methodology}
+
+In scientific research, there are basically two kinds of methodologies followed which are called Inductive inference and Deductive inference.  In Deduction research methodology,  by first a hypothesis is made based on the existing knowledge or domain experience of the person who made a certain hypothesis.  Then observations are made in order to validate the hypothesis. This can be illustrated as seen in the figure \ref{fig:DA}. \\ \\
+
+Example: A person who has knowledge of the working of torchlight knew a battery is needed for its working. When a situation comes, where the torchlight is not working. The person could immediately assume a hypothesis i.e., the batteries are discharged. Then the old batteries are replaced with newly charged batteries, by which observations are made. Finally, the hypothesis is validated based on the observations. If the torchlight works then the assumed hypothesis is true or else invalid and thereby theory/knowledge improved, next change of hypothesis is needed. \\ \\
+
+\begin{figure}
+	\centering
+	
+	\begin{tikzpicture}
+	
+	\begin{scope}[every node/.style={rectangle,thick,draw}]
+	\node (node 1) at (0,6) {Theory};
+	\node (node 2) at (0,4) {Hypothesis};
+	\node (node 3) at (0,2) {Observations};
+	\node (node 4) at (0,0) {Validation}; 
+	\end{scope}
+	
+	\begin{scope}
+	\path [->] (node 1) edge node[right] {} (node 2);
+	\path [->] (node 2) edge node[right] {} (node 3);
+	\path [->] (node 3) edge node[right] {} (node 4);
+	\end{scope}
+	
+	\end{tikzpicture} 
+	
+	\caption{Deduction Approach}
+	\label{fig:DA}
+\end{figure} 
+
+
+\section{Usability}
+
+The Human Computer Interaction researcher, Mr. Jakob Nielsen defines Usability as "a quality attribute that assesses how easy user interfaces are to use" \cite{usability-define}. It is characterised by five quality elements:
+
+\begin{enumerate}
+\item \textbf{Learnability:}  It says whether the design is simple for the person seeing the design for the first time and he can understand it.
+\item \textbf{Efficiency:}  After getting familiar with design, how simple it is to do the tasks in a shorter time as possible?
+\item \textbf{Memorability:} Once the person knew the design and worked for some time. Later, when he comes back after some significant time then is the design helpful enough to memorise?
+\item \textbf{Errors:} It signifies the possibility of a person encountering the design do some errors and then whether he could recover from it easily or not.
+\item \textbf{Satisfaction:} It determines the delightfulness of the person using the design.
+\end{enumerate}
+
+\clearpage
+
+\section{Wireframe}
+
+A wireframe is a methodology of showing a blueprint of a certain product. For example, if we consider to Wireframe a User Interface of an Application. It means to show a blueprint design of how the Application UI look like with different elements like buttons, text boxes etc placed on it and also how they interact and navigate to other User Interfaces. The blueprint design could vary from low fidelity i.e., rough sketches to high fidelity i.e., a more closer look to the desired final UI. There are several tools available in the market to do Wireframe and Balsamiq \cite{B} is one such tool. It is a kind of prototyping the actual product with certain simulation in functionality and visualization of the actual product. The advantage of this is the easiness of finding the mistakes in design earlier and so the cost of fixing them would be less. Here is an example of Wireframe done to a website idea about how it should look and the elements I would like to see as on a end product i.e., final front-end  design of the website coded is shown in the following figure \ref{fig:wireframe_website} of what one could design using Balsamiq tool and discuss with peers how they feel or to oneself to draw the ideas of what they want to achieve before actually coding to get the web page with the desired UI. \\ \\
+
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/Connect_DSP}
+	\caption{An Example to Wireframe a Website.\cite{B}}
+	\label{fig:wireframe_website}
+\end{figure}
 
 \section{User Experience Design} 
 
@@ -67,16 +126,8 @@ User Experience ( UX ) Design plays a vital role in the success of a product but
 	\label{fig:ux-design}
 \end{figure}
 
+The applicability of the User Experience Design can be seen in detail at chapter \ref{ch:approaches} Approaches. 
 
-\section{Wireframe}
 
-A wireframe is a methodology of showing a blueprint of a certain product. For example, if we consider to Wireframe a User Interface of an Application. It means to show a blueprint design of how the Application UI look like with different elements like buttons, text boxes etc placed on it and also how they interact and navigate to other User Interfaces. The blueprint design could vary from low fidelity i.e., rough sketches to high fidelity i.e., a more closer look to the desired final UI. There are several tools available in the market to do Wireframe and Balsamiq \cite{B} is one such tool. It is a kind of prototyping the actual product with certain simulation in functionality and visualization of the actual product. The advantage of this is the easiness of finding the mistakes in design earlier and so the cost of fixing them would be less. Here is an example of Website Wireframe is shown in the following figure \ref{fig:wireframe_website} of what one could design using Balsamiq tool and discuss with peers how they feel or to oneself to draw the ideas of what they want to achieve before actually coding to get the web page with the desired UI. \\ \\
-
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=\linewidth]{figures/wireframe_website}
-	\caption{Website Wireframe.\cite{B}}
-	\label{fig:wireframe_website}
-\end{figure}
 
 \let\cleardoublepage\clearpage
