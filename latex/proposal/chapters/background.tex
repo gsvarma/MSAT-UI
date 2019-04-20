@@ -31,12 +31,12 @@ Thereafter, a path is formed by connecting the nodes along the control flow as s
 \begin{figure}
 \centering
 
-\begin{tikzpicture}
+\begin{tikzpicture}[thick,scale=0.6, every node/.style={scale=0.6}]
 
 \begin{scope}[every node/.style={circle,thick,draw}]
 \node (node 1) at (4,8) {if (a == b)};
-\node[rectangle] (node 2) at (0,4) {echo "a and b are the same"};
-\node[rectangle] (node 3) at (8,4) {echo "a and b are different"};
+\node[rectangle] (node 2) at (-2,4) {echo "a and b are the same"};
+\node[rectangle] (node 3) at (10,4) {echo "a and b are different"};
 \node[circle,minimum size=2cm] (node 4) at (4,0) {}; 
 \end{scope}
 
@@ -59,38 +59,6 @@ Thereafter, a path is formed by connecting the nodes along the control flow as s
 
 There are different kinds of tools available for doing static code analysis such as IDE Notifications, IDE tools, Dedicated tools, Linters and CLI tools. Out of which, the Dedicated tools and CLI tools are more likely to report security vulnerabilities, whereas others are more likely to report coding style issues. In this thesis, we will look into the usability aspect of such tools. 
 
-\section{Deduction Research Methodology}
-
-In scientific research, there are fundamentally two kinds of methodologies followed which are called Inductive inference and Deductive inference.  In Deduction research methodology,  by first a hypothesis is made based on the existing knowledge or domain experience of the person who made a certain hypothesis.  Then observations are made in order to validate the hypothesis. This can be illustrated as seen in the figure \ref{fig:DA}. \\ \\
-
-Example: A person who has knowledge of the working of torchlight knew a battery is needed for its working. When a situation comes, where the torchlight is not working. The person could immediately assume a hypothesis i.e., the batteries are discharged. Then the old batteries are replaced with newly charged batteries, by which observations are made. Finally, the hypothesis is validated based on the observations. If the torchlight works then the assumed hypothesis is true or else invalid and thereby theory/knowledge improved, next change of hypothesis is needed. \\ 
-
-In this thesis, deductive research methodology is primarily used as framework and adapts as per 'User Experience Design' cycle which is introduced in \ref{sec:uxd}. \\
-
-\begin{figure}
-	\centering
-	
-	\begin{tikzpicture}
-	
-	\begin{scope}[every node/.style={rectangle,thick,draw}]
-	\node (node 1) at (0,6) {Theory};
-	\node (node 2) at (0,4) {Hypothesis};
-	\node (node 3) at (0,2) {Observations};
-	\node (node 4) at (0,0) {Validation}; 
-	\end{scope}
-	
-	\begin{scope}
-	\path [->] (node 1) edge node[right] {} (node 2);
-	\path [->] (node 2) edge node[right] {} (node 3);
-	\path [->] (node 3) edge node[right] {} (node 4);
-	\end{scope}
-	
-	\end{tikzpicture} 
-	
-	\caption{Deduction Approach}
-	\label{fig:DA}
-\end{figure} 
-
 
 \section{Usability}
 
@@ -103,8 +71,6 @@ The Human Computer Interaction researcher, Dr. Jakob Nielsen defines Usability a
 \item \textbf{Errors:} It signifies the possibility of a person encountering the design do some errors and then whether he could recover from it easily or not.
 \item \textbf{Satisfaction:} It determines the delightfulness of the person using the design.
 \end{enumerate}
-
-\clearpage
 
 \section{Wireframe}
 
