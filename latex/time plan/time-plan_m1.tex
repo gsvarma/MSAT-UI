@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage{pgfgantt}
+
+\begin{document}
+
+
+\begin{figure}
+	\vspace*{-2cm}
+	\centering
+\scalebox{1}{	\begin{tikzpicture}
+\begin{pgfinterruptboundingbox}
+\begin{ganttchart}[Mile/.style={milestone/.append style={fill=red,xscale=5}}, canvas/.append style={alias=frame}, title/.style={fill=blue, draw=none},
+		title label font=\color{white}\bfseries,
+		time slot format=isodate,
+		title right shift=-.1,
+		title top shift=.05,
+		x unit=3mm
+			]{2019-05-01}{2019-05-31}		
+     	\gantttitlecalendar{year,month=shortname} \\
+     	
+     	\ganttgroup[group/.append style={draw=black, fill=teal!50}]{UX Design Cycle 1}{2019-05-01}{2019-05-31} \\	
+       \ganttbar[bar/.append style={fill=green!50}]{Develop Prototypes}{2019-05-01}{2019-05-07} \\
+       \ganttbar[bar/.append style={fill=green!50}]{Plan User Study}{2019-05-08}{2019-05-14} \\
+       \ganttbar[bar/.append style={fill=green!50}]{Hold User Study}{2019-05-15}{2019-05-21} \\
+       \ganttbar[bar/.append style={fill=green!50}]{Assimilate Results}{2019-05-22}{2019-05-31}
+       
+       
+	\end{ganttchart}	
+	\end{pgfinterruptboundingbox}
+	\useasboundingbox (frame.south west) rectangle (frame.north east);
+ \end{tikzpicture} }
+\end{figure}
+
+\end{document}
