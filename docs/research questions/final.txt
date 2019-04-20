@@ -1,0 +1,9 @@
+Title - Integration of Multiple Static Analysis Tools in a Single Interface
+
+Problem Statement - How to Integrate the Results of Multiple Static Analysis Tools in a Unified User Interface?
+
+RQ 1 - How to display the results of the same codebase from different analysis tools?
+
+RQ 2 - What feedback works to know that the bug fixing is on-going?
+
+RQ 3 - How to carry traceability of bug fixing?
