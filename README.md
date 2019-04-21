@@ -6,7 +6,7 @@
 [ *Unofficial* ] **Supervisor**: Ms Lisa Nguyen <br />
 
 ## Proposal 
-[Slides](https://github.com/gsvarma/SAT-Responsive/blob/master/docs/Proposal%20presentation%20_%20Varma.pdf) <br />
+[Slides](https://github.com/gsvarma/MSAT-UI/blob/master/docs/slides/Proposal%20presentation%20_%20dry%20run.pdf) <br />
 [Abstract](https://github.com/gsvarma/SAT-Responsive/blob/master/latex/abstract/abstract.pdf) <br />
 [Document](https://github.com/gsvarma/SAT-Responsive/blob/master/latex/proposal/thesis.pdf) <br />
 
