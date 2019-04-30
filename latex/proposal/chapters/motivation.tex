@@ -3,31 +3,7 @@
 
 \section{Current Research}
 
-In the current research, we could see the usage of multiple tools in the Software Industry where each tool is different in computation approaches as one could be standard run on Nightly builds for example with Checkmarx \cite{checkmarx} tool or could be following Incremental Analysis, which means only testing the changed version of code instead of running analysis on complete codebase. The reasons of using multiple tools could be as each tool is capable of detecting bugs with different coverage \cite{bessey2010few} \cite{delaitre2015evaluating}, it could help in finding more bugs easily which are not found by tool but the other \cite{plakosh2014improving}. There is also research \cite{flynn2018prioritizing} going in the direction of using multiple static analysis tools in order to prioritise the bug warning alerts. There is a paper \cite{meng2008approach} published in 2008 which uses results of three different static analysis tools for a programming language, Java and merges them together in order to show warnings to the developer. Also, recently a team from OASIS \cite{oasis} in the OASIS SARIF Technical Committee \cite{oasis-tc} introduced a Static Analysis Results Interchange Format (SARIF) of representing bug warnings in a JSON format. Currently \cite{sarif-git}, the specification is being standardised. This shows there is potential research going in direction of using multiple static analysis tools at once. This shows the potential of using multiple tools in near future once the standardisation is adapted across static analysis tools developers or at least with the availability of adapters which are capable of converting the output of one static analysis tool to a SARIF format. Here's an example \cite{sarif-example} of how SARIF might look. SARIF is been used by SWAMP \cite{swamp-scarf-sarif}, a continuous software assurance which is automated. \\
-
-\begin{lstlisting}[language=json,firstnumber=1][frame=single]
-
-"results": [
-{
-"ruleId": "GSV001",
-"message": {
-"text": "Variable \"i\" was used without being initialized.",
-"richText": "Variable `i` was used without being initialized." 
-},
-"locations": [
-{
-"physicalLocation": {
-"uri": "file://build.example.com/work/src/collections/list.cpp", "region": {
-"startLine": 16
-}
-},
-"fullyQualifiedLogicalName": "collections::list:add"
-}
-]
-
-
-\end{lstlisting}
-\hfill \break
+In the current research, we could see the usage of multiple tools in the Software Industry where each tool is different in computation approaches as one could be standard run on Nightly builds for example with Checkmarx \cite{checkmarx} tool or could be following Incremental Analysis, which means only testing the changed version of code instead of running analysis on complete codebase. The reasons of using multiple tools could be as each tool is capable of detecting bugs with different coverage \cite{bessey2010few} \cite{delaitre2015evaluating}, it could help in finding more bugs easily which are not found by tool but the other \cite{plakosh2014improving}. There is also research \cite{flynn2018prioritizing} going in the direction of using multiple static analysis tools in order to prioritise the bug warning alerts. There is a paper \cite{meng2008approach} published in 2008 which uses results of three different static analysis tools for a programming language, Java and merges them together in order to show warnings to the developer. 
 Although we have seen the current research trends and their direction, the usability aspect is not addressed so far in the context of using multiple tools. There are no research papers found addressing the usability issue with multiple tools in single interface. The multiplicity of tools used for a single project and that too with different computation capabilities brings a new challenge.  One tool could produce results in no time and others could take more time in comparison. This could lead to a situation of breaking the usability of the user interface. On that challenge, this thesis aims to address such a scenario with a problem statement as " How to integrate the results of multiple static analysis tools in a unified user interface? ".  \\ \\
 
 The thesis work begins by brainstorming on the problem statement and as a result, different research questions are brought up and of which three research questions are selected with respect to available sources, scope and limitations of Thesis time frame. \\ \\
