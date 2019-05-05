@@ -16,24 +16,20 @@
 		title right shift=-.1,
 		title top shift=.05,
 		x unit=3mm
-			]{2019-07-01}{2019-07-31}		
-     	\gantttitlecalendar{year,month=name} \\
+			]{2019-08-01}{2019-08-31}		
+     	\gantttitlecalendar{year,month=shortname} \\
      	
-    
+     	\ganttgroup[group/.append style={draw=black, fill=teal!50}]{UX Design Cycle 3}{2019-08-01}{2019-08-31} \\	
+       \ganttbar[bar/.append style={fill=green!50}]{Develop Prototypes}{2019-08-01}{2019-08-07} \\
+       \ganttbar[bar/.append style={fill=green!50}]{Plan User Study}{2019-08-08}{2019-08-14} \\
+       \ganttbar[bar/.append style={fill=green!50}]{Hold User Study}{2019-08-15}{2019-08-21} \\
+       \ganttbar[bar/.append style={fill=green!50}]{Assimilate Results}{2019-08-22}{2019-08-31}
        
-       \ganttgroup[group/.append style={draw=black, fill=teal!50}]{UX Design Cycle 3}{2019-07-01}{2019-07-31} \\	
-       \ganttbar[bar/.append style={fill=green!50}]{Develop Prototypes}{2019-07-01}{2019-07-07} \\
-       \ganttbar[bar/.append style={fill=green!50}]{Plan User Study}{2019-07-08}{2019-07-14} \\
-       \ganttbar[bar/.append style={fill=green!50}]{Hold User Study}{2019-07-15}{2019-07-21} \\
-       \ganttbar[bar/.append style={fill=green!50}]{Assimilate Results}{2019-07-22}{2019-07-31} 
-       
-    
        
 	\end{ganttchart}	
 	\end{pgfinterruptboundingbox}
 	\useasboundingbox (frame.south west) rectangle (frame.north east);
  \end{tikzpicture} }
-
 \end{figure}
 
 \end{document}
