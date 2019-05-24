@@ -1,0 +1,3 @@
+- Rating of like/dislike
+- task: fast / clicks
+- task: suceed or not
