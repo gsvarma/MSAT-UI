@@ -1,0 +1,1 @@
+The icons are to be used only for Open Source / Non-commercial projects. 
