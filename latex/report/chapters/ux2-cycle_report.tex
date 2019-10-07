@@ -1,4 +1,4 @@
-\chapter{User Experience Cycle 2}
+\chapter{User Experience Design Cycle 2}
 \label{ch:ux2-cycle_report}
 
 The User Experience Design Cycle 2 plan and results discussed here. \\
@@ -103,7 +103,7 @@ Now let us begin with first solution idea to analysis view, i.e., Single list. \
 
 Solution Idea: ( Single List ) \\
 
-As we know, each static analysis tool has a respective name and an icon representing it. So, when we integrate multiple tools, we either must use tool names or icons to represent the respective analysis tool while displaying the bug-finding results that indicates which bug was identified by what tool. In the current scenario, an idea of having a table view with a tool column that shows tool icons for a respective bug finding. This idea could be well understood, looking at following \ref{fig:S21_single_list} or a complete prototype images added in appendix. \\ \\
+As we know, each static analysis tool has a respective name and an icon representing it. So, when we integrate multiple tools, we either must use tool names or icons to represent the respective analysis tool while displaying the bug-finding results that indicates which bug was identified by what tool. In the current scenario, an idea of having a table view with a tool column that shows tool icons for a respective bug finding. This idea could be well understood, looking at following figure \ref{fig:S21_single_list} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Single List}
 \begin{figure}[hbt!]
@@ -133,7 +133,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea: ( Separate List ) \\
 
-Similar to the previous one, now the idea is showing separate table view for each tool. This idea could be well understood, looking at following \ref{fig:S21_seperate_lists} or a complete prototype images added in appendix.  \\
+Similar to the previous one, now the idea is showing separate table view for each tool. This idea could be well understood, looking at following figure \ref{fig:S21_seperate_lists} or a complete prototype images added in appendix.  \\
 
 \textbf{Seperate List}
 \begin{figure}[hbt!]
@@ -164,7 +164,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea: ( Tags ) \\
 
-As we have seen so far using icons for representing an analysis tool. Now, having a tag name for each tool and used for bug finding results displayed in a complete list view. StackOverflow user interface inspires the present solution idea. This approach could be well understood, looking at following \ref{fig:S21_tags} or a complete prototype images added in appendix.  \\
+As we have seen so far using icons for representing an analysis tool. Now, having a tag name for each tool and used for bug finding results displayed in a complete list view. StackOverflow user interface inspires the present solution idea. This approach could be well understood, looking at following figure \ref{fig:S21_tags} or a complete prototype images added in appendix.  \\
 
 \textbf{Tags}
 \begin{figure}[hbt!]
@@ -211,7 +211,7 @@ Follow Up: \\
 
 Solution Idea – Multiple Icons: \\
 
-Once we have analysis results from the integrated tools, the interface shows respective bug findings in code editor. In the present scenario, interface shows a tool icon in the gutter at the respective line of code where the tool identifies the bug. So, every tool shows its respective tool icon. This idea could be well understood, looking at following  \ref{fig:S21_multiple_icons} or a complete prototype images added in appendix. \\
+Once we have analysis results from the integrated tools, the interface shows respective bug findings in code editor. In the present scenario, interface shows a tool icon in the gutter at the respective line of code where the tool identifies the bug. So, every tool shows its respective tool icon. This idea could be well understood, looking at following \ref{fig:S21_multiple_icons} or a complete prototype images added in appendix. \\
 
 \textbf{Multiple Icons}
 \begin{figure}[hbt!]
@@ -239,7 +239,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea – Single Icon: \\
 
-Once we have analysis results from the integrated tools, the interface shows respective bug findings in code editor. In the present scenario, interface shows a single icon in the gutter at the respective line of code where the tool identifies the bug no matter which tool has identified it. A text box which is a popup on click of the standard icon shows the details about which tool identified it as a bug. This idea could be well understood, looking at following \ref{fig:S21_single_icon} or a complete prototype images added in appendix. \\
+Once we have analysis results from the integrated tools, the interface shows respective bug findings in code editor. In the present scenario, interface shows a single icon in the gutter at the respective line of code where the tool identifies the bug no matter which tool has identified it. A text box which is a popup on click of the standard icon shows the details about which tool identified it as a bug. This idea could be well understood, looking at following figure \ref{fig:S21_single_icon} or a complete prototype images added in appendix. \\
 
 \textbf{Single Icon}
 \begin{figure}[hbt!]
@@ -269,9 +269,9 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 As part of this primary research question, we are going to first evaluate the three feedback mechanisms proposed in context of analysis view, i.e., animated icons, progress bar and pending status popup in our designed MSAT-UI ( Multiple Static Analysis Tools – User Interface ) and later in context of code view with other solution ideas. \\
 
-The ‘animated icons’ solution idea demonstrates that when the user selected a bug finding and attempted to fix it by submitting for re-analysis, interface shows a feedback with respective tool icons with animation for that bug which is under analysis. This idea could be well understood, looking at following \ref{fig:S22_animation} or a complete prototype images added in appendix.  \\ \\
+The ‘animated icons’ solution idea demonstrates that when the user selected a bug finding and attempted to fix it by submitting for re-analysis, interface shows a feedback with respective tool icons with animation for that bug which is under analysis. This idea could be well understood, looking at following figure \ref{fig:S22_animation} or a complete prototype images added in appendix.  \\ \\
 
-\textbf{Animated icons}
+\textbf{Animated Icons}
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/solution_ideas_snaps/S22_animation}
@@ -280,7 +280,7 @@ The ‘animated icons’ solution idea demonstrates that when the user selected 
 \end{figure}
 
 
-Next, the “progress bar” solution idea is demonstrated as when a user works on a  bug and submitted for analysis.  Then the interface shows progress bars as feedback with how far the tools finishes analysing. It shows progress bars for one or many tools that found that particular bug. This feedback is displayed when clicked on the bug, which is under analysis. Also, the respective icons are shown as blurred, indicating they are under analysis in contrast to previous solution idea. This idea could be well understood, looking at following \ref{fig:S22_progress} or a complete prototype images added in appendix.  \\ \\
+Next, the “progress bar” solution idea is demonstrated as when a user works on a  bug and submitted for analysis.  Then the interface shows progress bars as feedback with how far the tools finishes analysing. It shows progress bars for one or many tools that found that particular bug. This feedback is displayed when clicked on the bug, which is under analysis. Also, the respective icons are shown as blurred, indicating they are under analysis in contrast to previous solution idea. This idea could be well understood, looking at following figure \ref{fig:S22_progress} or a complete prototype images added in appendix.  \\ \\
 
 \textbf{Progress Bar}
 \begin{figure}[hbt!]
@@ -291,7 +291,7 @@ Next, the “progress bar” solution idea is demonstrated as when a user works 
 \end{figure}
 
 
-So finally, the third solution idea, i.e., “pending status popup” demonstrates the textual feedback about what the analysis tools are scanning as an example, tool name, timestamp, respective filename with code under analysis. On click of text link named “pending” in the status column in the given table view, it displays the popup. This idea could be well understood, looking at following \ref{fig:S22_popup} or a complete prototype images added in appendix. \\ \\
+So finally, the third solution idea, i.e., “pending status popup” demonstrates the textual feedback about what the analysis tools are scanning as an example, tool name, timestamp, respective filename with code under analysis. On click of text link named “pending” in the status column in the given table view, it displays the popup. This idea could be well understood, looking at following figure \ref{fig:S22_popup} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Pending Status Popup}
 \begin{figure}[hbt!]
@@ -329,19 +329,9 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. For animated icons, one user explicitly stated that it is useful to know what the tool is analysing. For progress bar, one user says as the optimised tools, in general, takes less time and thereby it has no priority as it also kind of fancy in his perspective. For status pending pop up, the user expressed his interest in knowing what is happening, and this feedback helps so. Others also mentioned that it is much convenient,  this feedback is solely enough, it is more detailed, having timestamp when it is processed it is good. Overall, the users requested to merge the feedbacks. In a sense, to have them all in a proposed prototype. Each one helps in its way of knowing what the tool analyses, how far the tool analysis a bug and more important details of the analysis in third feedback. Also, one user suggested to merge both code editor view and analysis viewer in the same window. \\
 
-Let us now look into the solution ideas for Code view perspective. The proposed solution ideas are, namely ‘status spinner’ and ‘alerts.’ \\
+Let us now look into the solution ideas for Code view perspective. The proposed solution ideas are, namely ‘alerts’ and ‘status spinner.’ \\
 
-The “status spinner” solution idea demonstrates that when a user has submitted a bug for analysis, and later he is off the analysis screen and probably working on a different task. In this scenario, the user interface shows a feedback at the corner of the screen with a busy indicator like spinner. This idea could be well understood, looking at following \ref{fig:S22_status} or a complete prototype images added in appendix. This approach indicates whether an analysis is running in the background or not. \\
-
-\textbf{Status Spinner}
-\begin{figure}[hbt!]
-	\centering
-	\includegraphics[width=\linewidth]{figures/solution_ideas_snaps/S22_status}
-	\caption{An interface prototype showing 'status spinner'.}
-	\label{fig:S22_status}
-\end{figure}
-
-The “alerts” solution idea demonstrates that when a user has submitted a bug for analysis, and later he if off the analysis screen and probably working on a different task. In this scenario,  the interface shows a popup whether the bug fix got succeed or not as feedback. It also has two call to action buttons such as “try again” or “ok”. The “try again” action button help to work on the same bug again and so this button could link to the program file where the user made previous changes concerning the bug finding. This idea could be well understood, looking at following \ref{S22_try_again_alert} or a complete prototype images added in appendix. \\
+The “alerts” solution idea demonstrates that when a user has submitted a bug for analysis, and later he if off the analysis screen and probably working on a different task. In this scenario,  the interface shows a popup whether the bug fix got succeed or not as feedback. It also has two call to action buttons such as “try again” or “ok”. The “try again” action button help to work on the same bug again and so this button could link to the program file where the user made previous changes concerning the bug finding. This idea could be well understood, looking at following figure \ref{S22_try_again_alert} or a complete prototype images added in appendix. \\
 
 \textbf{Alerts}
 \begin{figure}[hbt!]
@@ -349,6 +339,16 @@ The “alerts” solution idea demonstrates that when a user has submitted a bug
 	\includegraphics[width=\linewidth]{figures/solution_ideas_snaps/S22_try_again_alert}
 	\caption{An interface prototype showing 'alert'.}
 	\label{fig:S22_try_again_alert}
+\end{figure}
+
+The “status spinner” solution idea demonstrates that when a user has submitted a bug for analysis, and later he is off the analysis screen and probably working on a different task. In this scenario, the user interface shows a feedback at the corner of the screen with a busy indicator like spinner. This idea could be well understood, looking at following figure \ref{fig:S22_status} or a complete prototype images added in appendix. This approach indicates whether an analysis is running in the background or not. \\
+
+\textbf{Status Spinner}
+\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=\linewidth]{figures/solution_ideas_snaps/S22_status}
+	\caption{An interface prototype showing 'status spinner'.}
+	\label{fig:S22_status}
 \end{figure}
 
 Next, we examine the following User Scenario, Task and Follow up questionnaire protocol. \\
@@ -414,7 +414,7 @@ Follow up: \\
 
 Solution Idea – Numbers: \\
 
-This idea demonstrates as when respective commits are made to fix a particular bug. User interface shows the commit ids along with some metrics, i.e., numbers of new bugs introduced or got fixed by its respective change as determined by a tool. This idea could be well understood, looking at following \ref{S23_metrics} or a complete prototype images added in appendix. \\
+This idea demonstrates as when respective commits are made to fix a particular bug. User interface shows the commit ids along with some metrics, i.e., numbers of new bugs introduced or got fixed by its respective change as determined by a tool. This idea could be well understood, looking at following figure \ref{S23_metrics} or a complete prototype images added in appendix. \\
 
 \textbf{Numbers}
 \begin{figure}[hbt!]
@@ -442,7 +442,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea – Adjectives: \\
 
-This idea demonstrates as when respective commits are made to fix a particular bug. User interface shows the commit ids along with some adjective words, i.e., worst, bad, good, better and best. Each word demonstrates how easy or hard to fix the introduced bugs in general. As in previous solution idea, there could be a scenario where a change in specific commit could introduce new bugs or fix some bugs as reported by some tool. Now, in order to make it easy to evaluate or understand the numbers, adjectives could be used as a replacement. These adjectives are determined as rough time estimate difference to fix new bugs, and bugs got fixed. In practice, tools like Codacy show a rough time estimate. This idea could be well understood, looking at following \ref{S23_adjectives} or a complete prototype images added in appendix. \\
+This idea demonstrates as when respective commits are made to fix a particular bug. User interface shows the commit ids along with some adjective words, i.e., worst, bad, good, better and best. Each word demonstrates how easy or hard to fix the introduced bugs in general. As in previous solution idea, there could be a scenario where a change in specific commit could introduce new bugs or fix some bugs as reported by some tool. Now, in order to make it easy to evaluate or understand the numbers, adjectives could be used as a replacement. These adjectives are determined as rough time estimate difference to fix new bugs, and bugs got fixed. In practice, tools like Codacy show a rough time estimate. This idea could be well understood, looking at following figure \ref{S23_adjectives} or a complete prototype images added in appendix. \\
 
 \textbf{Adjectives}
 \begin{figure}[hbt!]
@@ -468,7 +468,7 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. Users felt that it depends on the expertise of the user, rough estimation of time is helpful and agreed to the scenario of having time estimate for this open research question. One user stated it is confusing, but all others accepted the idea. There are couple of suggestions such as combining this idea with previous one like numbers are shown at first and on click, shows what are those bugs whether good or bad in terms of fixing it in general and for beginners this idea is helpful. However, numbers are helpful for experts as time estimate could not be same among all colleagues in a software development team. One additional suggestion is to show what the tool reports as bugs and where. \\
 
-Now let us look into the solution idea in the context of code view, which we named it as “Before/After”. It shows two columns namely ‘Before’ and ‘After’ where ‘Before’ column has the code status before the commit happened while the bug is identified by a particular tool, wherein ‘After’ column, it shows the changes made to code. If the tool states as bug fixed, then it shows positive code change, and if the tool says it needs fix, then it determines the code where the bug is identified and at this point Before column shows the code before the change is made that lead to presence of bug. This idea could be well understood, looking at following \ref{fig:S23_before_after} or a complete prototype images added in appendix.
+Now let us look into the solution idea in the context of code view, which we named it as “Before/After”. It shows two columns namely ‘Before’ and ‘After’ where ‘Before’ column has the code status before the commit happened while the bug is identified by a particular tool, wherein ‘After’ column, it shows the changes made to code. If the tool states as bug fixed, then it shows positive code change, and if the tool says it needs fix, then it determines the code where the bug is identified and at this point Before column shows the code before the change is made that lead to presence of bug. This idea could be well understood, looking at following figure \ref{fig:S23_before_after} or a complete prototype images added in appendix.
 
 \textbf{Before/After}
 \begin{figure}[hbt!]

@@ -1,4 +1,4 @@
-\chapter{User Experience Cycle 1}
+\chapter{User Experience Design Cycle 1}
 \label{ch:ux1-cycle_report}
 
 The User Experience Design Cycle 1 plan and results discussed here.
@@ -111,7 +111,7 @@ Let us walk through the three solution ideas, one by one and see how the users e
 
 Solution Idea: ( Single List ) \\
 
-As we know, each static analysis tool has a respective name and an icon representing it. So, when we integrate multiple tools, we either must use tool names or icons to represent the respective analysis tool while displaying the bug-finding results that indicates which bug was identified by what tool. In the current scenario, an idea of having a table view with a tool column that shows tool icons for a respective bug finding. This idea could be well understood, looking at following \ref{fig:S11_single_list} or a complete prototype images added in appendix. \\ \\
+As we know, each static analysis tool has a respective name and an icon representing it. So, when we integrate multiple tools, we either must use tool names or icons to represent the respective analysis tool while displaying the bug-finding results that indicates which bug was identified by what tool. In the current scenario, an idea of having a table view with a tool column that shows tool icons for a respective bug finding. This idea could be well understood, looking at following figure \ref{fig:S11_single_list} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Single List}
 \begin{figure}[hbt!]
@@ -137,7 +137,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea: ( Separate List ) \\
 
-Similar to the previous one, now the idea is showing separate table view for each tool. This idea could be well understood, looking at following \ref{fig:S11_seperate_list} or a complete prototype images added in appendix. \\ \\
+Similar to the previous one, now the idea is showing separate table view for each tool. This idea could be well understood, looking at following figure \ref{fig:S11_seperate_list} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Seperate List}
 \begin{figure}[hbt!]
@@ -162,7 +162,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea: ( Tags ) \\
 
-As we have seen so far using icons for representing an analysis tool. Now, having a tag name for each tool and used for bug finding results displayed in a complete list view. StackOverflow user interface inspires the present solution idea. This approach could be well understood, looking at following \ref{fig:S11_tags} or a complete prototype images added in appendix. 
+As we have seen so far using icons for representing an analysis tool. Now, having a tag name for each tool and used for bug finding results displayed in a complete list view. StackOverflow user interface inspires the present solution idea. This approach could be well understood, looking at following figure \ref{fig:S11_tags} or a complete prototype images added in appendix. 
 \\ \\
 
 \textbf{Tags}
@@ -187,7 +187,7 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Solution Idea: ( Summary Screen ) \\
 
-As the standard interface shows a combination of the results from different analysis tools, it is felt ideal for showing a summary of results in the form of graphs. In the present scenario, a solution idea with pie chart with sections resembling the interested grouping/categories found in the usability evaluation report done by Johannes. These categories are found out to be the overall sections considered by users going through static analysis results.  This scheme could be well understood, looking at following \ref{fig:ux1_summary_screen} or a complete prototype images added in appendix. \\ \\
+As the standard interface shows a combination of the results from different analysis tools, it is felt ideal for showing a summary of results in the form of graphs. In the present scenario, a solution idea with pie chart with sections resembling the interested grouping/categories found in the usability evaluation report done by Johannes. These categories are found out to be the overall sections considered by users going through static analysis results.  This scheme could be well understood, looking at following figure \ref{fig:ux1_summary_screen}. \\ \\
 
 \textbf{Summary Screen}
 \begin{figure}[hbt!]
@@ -209,7 +209,7 @@ Users have recommended having a transition from summary screen to list of bugs a
 
 As part of this primary research question, we are going to evaluate the three feedback mechanisms proposed, i.e., animated icons, progress bar and pending status popup in our designed MSAT-UI ( Multiple Static Analysis Tools – User Interface ). \\ \\
 
-The ‘animated icons’ solution idea demonstrates that when the user chooses a bug finding, and user attempted to fix it by submitting for re-analysis,  respective tool icons with animation like rotating, for example, is shown as feedback for that bug which is under analysis. This idea could be well understood, looking at following \ref{fig:S12_animated_icons} or a complete prototype images added in appendix. \\ \\
+The ‘animated icons’ solution idea demonstrates that when the user chooses a bug finding, and user attempted to fix it by submitting for re-analysis,  respective tool icons with animation like rotating, for example, is shown as feedback for that bug which is under analysis. This idea could be well understood, looking at following figure \ref{fig:S12_animated_icons} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Animated icons}
 \begin{figure}[hbt!]
@@ -219,7 +219,7 @@ The ‘animated icons’ solution idea demonstrates that when the user chooses a
 	\label{fig:S12_animated_icons}
 \end{figure}
 
-Next, the “progress bar” solution idea is demonstrated as when a user works on a  bug and submitted for analysis.  Then the interface shows progress bars as feedback with how far the tools finishes analysing. It shows progress bars for one or many tools that found that particular bug. This feedback is displayed when clicked on the bug, which is under analysis. Also, the respective icons are shown as blurred, indicating they are under analysis in contrast to previous solution idea. This idea could be well understood, looking at following \ref{fig:S12_disabled_icons_progress_bar} or a complete prototype images added in Appendix. \\ \\
+Next, the “progress bar” solution idea is demonstrated as when a user works on a  bug and submitted for analysis.  Then the interface shows progress bars as feedback with how far the tools finishes analysing. It shows progress bars for one or many tools that found that particular bug. This feedback is displayed when clicked on the bug, which is under analysis. Also, the respective icons are shown as blurred, indicating they are under analysis in contrast to previous solution idea. This idea could be well understood, looking at following figure \ref{fig:S12_disabled_icons_progress_bar} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Progress Bar}
 \begin{figure}[hbt!]
@@ -230,7 +230,7 @@ Next, the “progress bar” solution idea is demonstrated as when a user works 
 \end{figure}
 
 
-Moreover, finally, the third solution idea, i.e., “pending status popup” demonstrates the textual feedback about what the analysis tools are scanning as an example, tool name, timestamp, respective filename with code under analysis. On click of text link named “pending” in the status column in the given table view, it displays the popup. This idea could be well understood, looking at following \ref{fig:S12_pending_status_popup} or a complete prototype images added in Appendix. \\ \\
+Moreover, finally, the third solution idea, i.e., “pending status popup” demonstrates the textual feedback about what the analysis tools are scanning as an example, tool name, timestamp, respective filename with code under analysis. On click of text link named “pending” in the status column in the given table view, it displays the popup. This idea could be well understood, looking at following figure \ref{fig:S12_pending_status_popup} or a complete prototype images added in appendix. \\ \\
 
 \textbf{Pending Status Popup}
 \begin{figure}[hbt!]
@@ -260,7 +260,7 @@ We evaluate the following sub research question in this context. \\
 
 Whether the given UI, i.e., previous commits in the process of fixing a bug-finding with numbers determining the adding or removing of other bugs be able to address the scenario from the user perspective? \\ \\
 
-As part of this primary research question, we evaluate the solution idea of presenting the traceability scenario. TeamScale inspired this solution idea and adapted to our context. This approach could be well understood, looking at following \ref{fig:S13_revert} or a complete prototype images added in Appendix. In a user study, we explain the concept of traceability to the user, then presents the following User Scenario and a follow-up questionnaire. \\ \\
+As part of this primary research question, we evaluate the solution idea of presenting the traceability scenario. TeamScale inspired this solution idea and adapted to our context. This approach could be well understood, looking at following figure \ref{fig:S13_revert} or a complete prototype images added in Appendix. In a user study, we explain the concept of traceability to the user, then presents the following User Scenario and a follow-up questionnaire. \\ \\
 
 
 \textbf{Revert}
