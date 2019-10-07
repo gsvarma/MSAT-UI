@@ -14,17 +14,22 @@ In our qualitative research methodology, we concern the feedback of users as an 
 
 For every research question, we formulate the user scenario and what usual Static Code Analysis tool does. Next, what can be done better considering other solution ideas from different Software Engineering domains in addition to our ideas is analysed through the UX Design process. In this process, the metrics mentioned above, which are qualitative and quantitative, are observed. \\
 
-Here is an example of how the implementation approach could get started.
+Here is an example of how the implementation approach could get started. \\ \\ \\
 
-\section{Research Question 1: How to Display the Results of the Same Codebase from Different Analysis Tools}
+\section{Research Question 1: How to Display the Results of the Same Codebase from Different Analysis Tools} 
 
-\textbf{Solution ideas}: \\ \\
-1. Display results separately for each tool. \\
-2. Combine the results and mark its respective icon in a column to show which tool identifies the particular bug. \\
 
-With above-mentioned possible solution ideas derived after analysing the findings from other software engineering disciplines, i.e., Complex datasets and Issue tracker, two different prototypes are designed using a wireframe tool called Balsamiq \cite{B}. The design lessons adapted from these disciplines are extensibility of columns were integrating the complex datasets into a unified interface. Also, expressiveness concern tackled with issue tracker by having own dashboard instead of overwhelming the user with complete results which are not related to him. Assume the name \textit{toolShort} means a Static Analysis tool capable of giving results in a short time and \textit{toolLong} mean a Static Analysis tool gives results after a long time. \\ \\
+\textbf{Solution ideas}: \\ 
+\begin{enumerate}
+\item  Display results separately for each tool.
+\item  Combine the results and mark its respective icon in a column to show which tool identifies the particular bug.
+\end{enumerate}
 
-\textbf{Prototype 1}: \\ \\
+With above-mentioned possible solution ideas derived after analysing the findings from other software engineering disciplines, i.e., Complex datasets and Issue tracker, two different prototypes are designed using a wireframe tool called Balsamiq \cite{B}. The design lessons adapted from these disciplines are extensibility of columns were integrating the complex datasets into a unified interface. Also, expressiveness concern tackled with issue tracker by having own dashboard instead of overwhelming the user with complete results which are not related to him. Assume the name \textit{toolShort} means a Static Analysis tool capable of giving results in a short time and \textit{toolLong} mean a Static Analysis tool gives results after a long time. \\ \\ 
+
+\clearpage
+
+\textbf{Prototype 1}:
 
 The prototype for solution idea, i.e., separately displaying the results is shown in the following \autoref{fig:toolSeperate}. \\ 
 
@@ -35,9 +40,7 @@ The prototype for solution idea, i.e., separately displaying the results is show
 	\label{fig:toolSeperate}
 \end{figure}
 
-\clearpage
-
-\textbf{Prototype 2}: \\ \\
+\textbf{Prototype 2}:
 
 The prototype for solution idea, i.e., combining the results is shown in the following \autoref{fig:toolCombine}. \\ \\
 
@@ -48,17 +51,17 @@ The prototype for solution idea, i.e., combining the results is shown in the fol
 	\label{fig:toolCombine}
 \end{figure}
 
-Next, evaluate the designed prototypes as mentioned in chapter \ref{ch:researchmethodology_report}. After evaluation, requirements are gathered based on user feedback and also new findings from the literature, if any. New designs are prototyped as mentioned above and repeats as per User Experience Design cycle. \\ \\
+Next, evaluate the designed prototypes as mentioned in \autoref{ch:researchmethodology_report}. After evaluation, requirements are gathered based on user feedback and also new findings from the literature, if any. New designs are prototyped as mentioned above and repeats as per User Experience Design cycle. \\ \\
 
 \section{Research Question 2: \\ What Feedback Works to Know that the Bug Fixing is	\\ On-going?}
 
-\textbf{Solution ideas}: \\ \\
+\textbf{Solution ideas}: \\
+\begin{enumerate}
+\item  User selects a bug and tries to fix it with some modifications in code and submit for analysis, and then the bug is shown as pending in status.
+\item  If the modified code fixes the reported bug, then it is shown as ‘fixed’ in status, or else, ‘try again’.
+\end{enumerate}
 
-
-1. User selects a bug and tries to fix it with some modifications in code and submit for analysis, and then the bug is shown as pending in status. \\
-2. If the modified code fixes the reported bug, then it is shown as ‘fixed’ in status, or else, ‘try again’. \\ \\
-
-With the above mentioned possible solution ideas, we design the prototypes. The prototype \ref{fig:d_pending} illustrates a bug being displayed as ‘pending’ in the status column of bug listing. This scenario happens when a user selects a bug and attempts to fix it then submit for analysis tools. Perhaps the shorter tool, i.e., the tool capable of analysing in less computation time would report back whether the bug got fixed or not. Thereby, the Prototype 2 \ref{fig:d_tryagain} illustrates the bug is not fixed and shown as ‘try again’ in status column as the user attempted to fix earlier. \\ \\
+With the above mentioned possible solution ideas, we design the prototypes. The Prototype 1 design shown in \autoref{fig:d_pending} illustrates a bug being displayed as ‘pending’ in the status column of bug listing. This scenario happens when a user selects a bug and attempts to fix it then submit for analysis tools. Perhaps the shorter tool, i.e., the tool capable of analysing in less computation time would report back whether the bug got fixed or not. Thereby, the Prototype 2 design shown in \autoref{fig:d_tryagain} illustrates the bug is not fixed and shown as ‘try again’ in status column as the user attempted to fix earlier. \\ \\
 
 Also, in Prototype 1, it is observed that ‘Fix Now’ button in ‘Bug Description’ window is disabled, which also depicts the tool is analysing the bug in the background. \\
 
@@ -70,6 +73,8 @@ Also, in Prototype 1, it is observed that ‘Fix Now’ button in ‘Bug Descrip
 	\caption{An interface prototype showing pending status.}
 	\label{fig:d_pending}
 \end{figure}
+
+\clearpage
 
 \textbf{Prototype 2}
 
@@ -84,11 +89,13 @@ Next, evaluate the designed prototypes as mentioned in \autoref{ch:researchmetho
 
 \section{Research Question 3:  \\ How to Carry Traceability of Bug Fixing?}
 
-\textbf{Solution ideas}: \\ \\
-1. a timestamp for each bug fixing attempt with changes button \\
-2. a Revert button \\ \\
+\textbf{Solution ideas}: \\
+\begin{enumerate}
+\item  a timestamp for each bug fixing attempt with changes button
+\item  a Revert button
+\end{enumerate}
 
-With the above mentioned possible ideas, we design the prototypes. The prototype, i.e., Prototype 1 \ref{fig:d_changes} illustrates there is a timestamp for each bug fixing attempt which might help in the context of traceability as to know when someone is trying to mitigate a bug. Also, a button ‘Changes’ could perhaps show the code difference to the previous state of the codebase. The other prototype, i.e., Prototype 2 \ref{fig:d_revert}, illustrates in a situation where the user wants to revert to the previous situation of the codebase. This functionality could perhaps help in a situation when modified code introduces new bugs with an attempt to fix a particular bug. \\ \\
+With the above mentioned possible ideas, we design the prototypes. The prototype, i.e., Prototype 1 design shown in \autoref{fig:d_changes} illustrates there is a timestamp for each bug fixing attempt which might help in the context of traceability as to know when someone is trying to mitigate a bug. Also, a button ‘Changes’ could perhaps show the code difference to the previous state of the codebase. The other prototype, i.e., Prototype 2 design shown in \autoref{fig:d_revert}, illustrates in a situation where the user wants to revert to the previous situation of the codebase. This functionality could perhaps help in a situation when modified code introduces new bugs with an attempt to fix a particular bug. \\ \\
 
 Next, evaluate the designed prototypes as mentioned in \autoref{ch:researchmethodology_report}. After evaluation, requirements are gathered based on user feedback and also new findings from the literature, if any. New designs are prototyped as mentioned above and repeats as per ‘User Experience Design cycle’. \\ \\
 
@@ -99,8 +106,6 @@ Next, evaluate the designed prototypes as mentioned in \autoref{ch:researchmetho
 	\caption{An interface prototype showing time stamp and changes button.}
 	\label{fig:d_changes}
 \end{figure}
-
-\clearpage
 
 \textbf{Prototype 2}
 \begin{figure}[hbt!]
