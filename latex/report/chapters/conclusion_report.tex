@@ -4,12 +4,60 @@
 As software has become a part of day-to-day life, bug-free software is necessary. For which, static code analysis tools are used to identify and mitigate bugs during the software development life cycle. Although these are essential tools, in terms of usability, they lack the attention of developers. Further, the use of multiple static code analysis tools is increasing for obvious reasons such as to ensure the bug priority, increase coverage area. On the other hand, there is a standardisation process going on with a SARIF format, \cite{sarif-git} and this promises to have generated results in the same format from different analysis tools. \\ \\
 
 These reasons show the future scope of on-going research with multiple tools usage. So, when the integration of results from different tools happens, it is necessary to have a single interface. This thesis addressed this issue with three different primary research questions, i.e., \\ 
+
 \begin{enumerate}
-\item  How to display results of the same code base from different analysis tools?
-\item  What feedback works to know that bug fixing is on-going?
+\item  How to display the results of the same code base from different analysis tools?
+\item  What feedback works to know bug fixing is on-going?
 \item  How to carry traceability of bug fixing? \\ \\
+
 \end{enumerate}
 The research questions are answered by studying different software engineering disciplines and adapting the possible techniques if any. Also, the developers’ feedback is analysed through the user experience design cycle to make sure the designed prototypes are usable enough to overcome the issues. Hence, the thesis work ensured the applicability of the results examined. \\ \\
+
+Within the scope and time constraints of thesis term, we had three iterations for UX Design cycles. In the first cycle, we looked into analysis view scenarios concerned for each primary research questions. The following are a list of sub research questions dealt as part of this cycle. \\ \\
+\clearpage
+\begin{enumerate}
+	\item Does a separate list or single list help the user to identify the common bug?
+	\item Will having tags help in scalability of bugs?
+	\item Does the given statistics screen help the user in understating the analysis results overview?
+	\item Will the animation (rotation) of icons for tools suffice the feedback required by the user?
+	\item Will stating the progress of analysis for each tool be better than animation provided as feedback to the user?
+	\item Does having more textual information with a popup feedback is required by the user?
+	\item Do users require multiple feedbacks, i.e., any combination of animated icons, progress bar or pending status popup?
+	\item Whether the given UI, i.e., previous commits in the process of fixing a bug-finding with numbers determining the adding or removing of other bugs be able to address the scenario from the user perspective? \\
+\end{enumerate}
+
+In the second cycle, we have re-tested the previous solution ideas with new users in scenario of enormous code base with more number of warnings and more number of analysis tools integrated to the same codebase, concerning the scalability aspect. Also, we covered the code view perspective as well with various scenarios concerning each primary research question. The following are a list of sub research questions dealt as part of this cycle.\\ \\ 
+
+\begin{enumerate}
+	\item From analysis view perspective, does a separate list or single list help the user to identify the common bug?
+	\item From analysis view perspective, will tags help in scalability of bug results in comparison to separate list or single list?
+	\item From code view perspective, will single icon suffice the showing of different tools icons?
+	\item When submitting the bug for analysis, what feedback does user feel convenient among animation, progress bar or popup?
+	\item Does a single type of feedback suffice or requires combination?
+	\item From code view perspective, i.e., once user fixed a bug and submitted for analysis and then off the analysis results screen, then is popup notifications with analysis progress information better to busy status (spinner)?
+	\item In tracing, will the user need to know the changes made to fix a bug affecting the analysis of other tools?
+	\item Does adjective mapping ease the user to trace the changes made in code in terms of bugs existence?
+	\item From code view perspective, will the bug tool icons with before/after code help understand the user in easing to fix it? \\
+\end{enumerate} 
+
+
+Furthermore, in the third cycle, we have focussed more on code view perspective scenarios along with re-testing few potential solution ideas in a more scalable environment with new users. The following are a list of sub research questions dealt as part of this cycle. \\ \\
+
+\begin{enumerate}
+	\item Do users prefer bug icons or list view for bugs in same file?
+	\item Do users prefer to see bugs one by one or at once in the context of multiple bugs at the same time?
+	\item Does vertical view help in getting an overview of the presence of multiple bugs over horizontal views?
+	\item Do users prefer for table view over text description shown for multiple bugs at a line of code?
+	\item In context of same bug identified but with different line numbers, would have ‘similar bugs’ in bug description with on click pops up similar bug description boxes at the identified line or a list at the bottom help user in locating actual line where bug exist?
+	\item How usable are each feedback functionality compared to the scenario of using unified UI to native UIs?
+	\item Does alert notification help in fixing more bugs in contrast to its absence in current tools UI?
+	\item Does MSAT UI with five different feedback mechanisms helps in fixing the bugs in a faster way in comparison to using multiple tools with native user interfaces?
+	\item Does MSAT UI with five different feedback mechanisms helps in fixing more bugs in comparison to using multiple tools with native user interfaces?
+	\item Do users prefer having multiple windows to single window in tracing previous bug fixes in a method?
+	\item Do users be able to keep up in state of workflow as tools scale?
+	\item While tracing previous bug fixes in a method, do users prefer a table view to a before/after windows?
+	\item Do users prefer having tool names in general? \\
+\end{enumerate}
 
 We find the examined solution ideas to be good enough to consider as a stepping stone in the development of multiple static analysis tool user interfaces. \\ \\
 
