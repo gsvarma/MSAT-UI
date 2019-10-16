@@ -162,7 +162,7 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. The reasoning behind the low task success rate is because one user expected to see intersection of results with multiple tools selection. So, it made him lost in thinking, and one user felt it is not the best UI to do the task, so dropped off, and two users felt it is time-consuming. Also, some users felt there is no enough space to analyse and especially challenging to identify the common bug correctly. In contrast, there is one user who felt that this solution idea makes it more comfortable to perceive. \\
 
-\begin{myboxi}{{\textbf{From analysis view perspective, does a separate list or single list help the user to identify the common bug?}}}
+\begin{myboxi}{{\textbf{RQ 1-1: From analysis view perspective, does a separate list or single list help the user to identify the common bug?}}}
 \\ \\	Users preferred single list as it is more user-friendly and effortless to perceive.
 \end{myboxi}	
 	
@@ -197,8 +197,8 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 
 Now, we present the solution ideas in the context of code view. Similar process to solution ideas of analysis view, a user scenario is given to the user. Then we ask user to perform a task and finally after presented both the solution ideas prototypes, follow up questionnaire is asked. We consider a success criteria to the task in order to determine whether the user can perform the task or not on the presented prototype of respective solution idea. \\
 
-\begin{myboxi}{{\textbf{From analysis view perspective, will tags help in scalability of bug results in comparison to separate list or single list?}}}
-\\ \\	No! Although the proposed design is novel and more open, couple of users explicitly stated it to be confusing. Most users agreed with single list solution idea for this scenario.
+\begin{myboxi}{{\textbf{RQ 1-2: From analysis view perspective, will tags help in scalability of bug results in comparison to separate list or single list?}}}
+\\ \\ Although the proposed design is novel and more open, couple of users explicitly stated it to be confusing. Most users agreed with single list solution idea for this scenario.
 \end{myboxi}
 
 \clearpage
@@ -273,8 +273,8 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. Users said as a developer, the vital aspect is to find bug but not which tool reported it. Having a single icon is better in terms of readability, more straightforward, more convenient as it does not overcrowd the left-side gutter and looks much better. A couple of suggestions from users are to also add tool name instead of tool icon for general user to understand quickly and other user says in similar context that to have a popup for icons to know the respective tool names. One additional improvisation request is to have some bug severity representation at gutter section. \\
 
-\begin{myboxi}{{\textbf{From code view perspective, will single icon suffice the showing of different tools icons?}}}
-\\ \\	Yes! Single icon solution idea outwins multiple icons solution idea with a majority of 5 out of 7 users. 
+\begin{myboxi}{{\textbf{RQ 1-3: From code view perspective, will single icon suffice the showing of different tools icons?}}}
+\\ \\ Single icon solution idea outwins multiple icons solution idea with a majority of 5 out of 7 users. 
 \end{myboxi}
 
 
@@ -342,11 +342,11 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. For animated icons, one user explicitly stated that it is useful to know what the tool is analysing. For progress bar, one user says as the optimised tools, in general, takes less time and thereby it has no priority as it also kind of fancy in his perspective. For status pending pop up, the user expressed his interest in knowing what is happening, and this feedback helps so. Others also mentioned that it is much convenient,  this feedback is solely enough, it is more detailed, having timestamp when it is processed it is good. Overall, the users requested to merge the feedbacks. In a sense, to have them all in a proposed prototype. Each one helps in its way of knowing what the tool analyses, how far the tool analysis a bug and more important details of the analysis in third feedback. Also, one user suggested to merge both code editor view and analysis viewer in the same window. \\
 
-\begin{myboxi}{{\textbf{When submitting the bug for analysis, what feedback does user feel convenient among animation, progress bar or popup?}}}
+\begin{myboxi}{{\textbf{RQ 2-1: When submitting the bug for analysis, what feedback does user feel convenient among animation, progress bar or popup?}}}
 \\ \\	Each has its prominence. However, users felt that pending status is more useful among them.
 \end{myboxi}
 
-\begin{myboxi}{{\textbf{Does a single type of feedback suffice or requires combination?}}}
+\begin{myboxi}{{\textbf{RQ 2-2: Does a single type of feedback suffice or requires combination?}}}
 \\ \\	Users felt the requirement of the combination of all feedbacks as each serve in its scope.
 \end{myboxi}
 
@@ -402,7 +402,7 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. In the context of status spinner, users felt that it is simple; if the user want to know status, then click on analysis. In the context of alerts, a couple of users felt it is annoying, not useful while working on different priority work and also takes them out of context their mind was he in. Nevertheless, there are positive opinions from other users saying that it draws positive attention, it shows details, and it does not require much transitions to know the status. There is one suggestion from his expertise background in coding that if we need to implement alerts, it is better to have in the context of bug fix failure. But not in success as the tool does not need to say it as fixed, as developer is already in the mindset that he fixed the bug before submitting to analysis. This mindset shows that this user is usually confident about his bug fixes. Some users preferred to have both as they serve different purposes and indeed, they are both helpful feedbacks. \\
 
-\begin{myboxi}{{\textbf{From code view perspective, i.e., once user fixed a bug and submitted for analysis and then off the analysis results screen, then is popup notifications with analysis progress information better to busy status (spinner)?}}}
+\begin{myboxi}{{\textbf{RQ 2-3: From code view perspective, i.e., once user fixed a bug and submitted for analysis and then off the analysis results screen, then is popup notifications with analysis progress information better to busy status (spinner)?}}}
 \\ \\	Popup notifications solution idea outwins status spinner with majority of 4 out of 7. Although remaining said it is annoying, but if needs implemented they would prefer to have when bug fix fails.
 \end{myboxi}
 
@@ -495,12 +495,12 @@ Qualitative Results: \\
 
 Let us now investigate the reasoning behind the user’s choice of solution idea and respective ratings. Users felt that it depends on the expertise of the user, rough estimation of time is helpful and agreed to the scenario of having time estimate for this open research question. One user stated it is confusing, but all others accepted the idea. There are couple of suggestions such as combining this idea with previous one like numbers are shown at first and on click, shows what are those bugs whether good or bad in terms of fixing it in general and for beginners this idea is helpful. However, numbers are helpful for experts as time estimate could not be same among all colleagues in a software development team. One additional suggestion is to show what the tool reports as bugs and where. \\
 
-\begin{myboxi}{{\textbf{In tracing, will the user need to know the changes made to fix a bug affecting the analysis of other tools?}}}
-\\ \\	Yes! With number representation, it is good, but those do not represent difficulty.
+\begin{myboxi}{{\textbf{RQ 3-1: In tracing, will the user need to know the changes made to fix a bug affecting the analysis of other tools?}}}
+\\ \\ With number representation, it is good, but those do not represent difficulty.
 \end{myboxi}
 
-\begin{myboxi} {{\textbf{Does adjective mapping ease the user to trace the changes made in code in terms of bugs existence?}}}
-\\ \\	Yes! It is helpful, especially for beginners.
+\begin{myboxi} {{\textbf{RQ 3-2: Does adjective mapping ease the user to trace the changes made in code in terms of bugs existence?}}}
+\\ \\ It is helpful, especially for beginners.
 \end{myboxi}
 	
 Now let us look into the solution idea in the context of code view, which we named it as “Before/After”. It shows two columns namely ‘Before’ and ‘After’ where ‘Before’ column has the code status before the commit happened while the bug is identified by a particular tool, wherein ‘After’ column, it shows the changes made to code. If the tool states as bug fixed, then it shows positive code change, and if the tool says it needs fix, then it determines the code where the bug is identified and at this point Before column shows the code before the change is made that lead to presence of bug. This idea could be well understood, looking at following \autoref{fig:S23_before_after} or a complete prototype images added in appendix. \\ \\
@@ -548,8 +548,8 @@ Let us now investigate the reasoning behind the user’s choice of solution idea
 Users felt that this interface is more helpful than other views shown in analysis view solution ideas, helpful, novel, outstanding that user able to understand what changes he made, which all are positive. There are however few remarks and suggestions to make it more useful from user perspective such as having some background colour for changed line, colours for change in code, a single screen then no need of trace button. Still, however, the same user agreed with proposed design in the context of multiple tools. Other design idea for this scenario shared by the participant is Git like merge conflict design concept. Overall, users welcomed the design idea. One general suggestion is to have the flexibility of going to a code file on selection of a bug finding. \\
 
 
-\begin{myboxi}{{\textbf{From code view perspective, will the bug tool icons with before/after code help understand the user in easing to fix it?}}}
-\\ \\	Yes! Users felt helpful in tracing, although they did not understand the design in first glance as it is novel.
+\begin{myboxi}{{\textbf{RQ 3-3: From code view perspective, will the bug tool icons with before/after code help understand the user in easing to fix it?}}}
+\\ \\ Users felt helpful in tracing, although they did not understand the design in first glance as it is novel.
 \end{myboxi}
 
 
