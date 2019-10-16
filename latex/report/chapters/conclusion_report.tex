@@ -9,8 +9,8 @@ These reasons show the future scope of on-going research with multiple tools usa
 \item  How to display the results of the same code base from different analysis tools?
 \item  What feedback works to know bug fixing is on-going?
 \item  How to carry traceability of bug fixing? \\ \\
-
 \end{enumerate}
+
 The research questions are answered by studying different software engineering disciplines and adapting the possible techniques if any. Also, the developers’ feedback is analysed through the user experience design cycle to make sure the designed prototypes are usable enough to overcome the issues. Hence, the thesis work ensured the applicability of the results examined. \\ \\
 
 Within the scope and time constraints of thesis term, we had three iterations for UX Design cycles. In the first cycle, we looked into analysis view scenarios concerned for each primary research questions. The following are a list of sub research questions dealt as part of this cycle. \\ \\
@@ -60,6 +60,30 @@ Furthermore, in the third cycle, we have focussed more on code view perspective 
 	\item Do users prefer having tool names in general? \\
 \end{enumerate}
 
-We find the examined solution ideas to be good enough to consider as a stepping stone in the development of multiple static analysis tool user interfaces. \\ \\
+
+To summarise the user preferences examined by the sub research questions for the primary research questions, here are the outcomes. \\ \\
+
+\begin{myboxi}{{\textbf{RQ 1: How to display the results of the same code base from different analysis tools?}}}
+\\ \\ For analysis view, a single list in a table format where a column shows the tool icons which depicts which tools found that particular bug. For code view, a single standard icon will suffice as users in majority felt it is essential to know the bug existence but not who found it. Furthermore, users preferred to have a table view when looking for details after clicking the bug icon. Next, to know similar bugs that exist in the same file, a list view with table format at bottom suffices. \\
+
+Also, users felt the need to have a summary screen showing statistics of bug findings. A pie chart with categorisation of bug types suffices as an essential requirement. \\
+\end{myboxi}
+
+\begin{myboxi}{{\textbf{RQ 2: What feedback works to know bug fixing is on-going?}}}
+\\ \\ For analysis view, users felt the proposed ideas as novel such as having animated icons for knowing what bugs are under analysis by tools. Next, a progress bar to know how far the analysis has completed by a tool on an individual bug fix submission, and a pending status popup for having more details as possible. So, users preferred the combination. \\
+
+For a code view, users had mixed opinions about having alerts popup, which determines whether the progress of analysis when a user is off the analysis view. However, almost all users agreed on having an alert popup when tool determines the bug fix is failed and so the user could re-try to fix the bug immediately which aids in his workflow. \\
+
+These ideas also stood out to be considerable when compared to analysis tools with native user interfaces. Also, these are found to help fix more bugs and in a faster way.
+
+\end{myboxi}
+	
+\begin{myboxi}{{\textbf{RQ 3: How to carry traceability of bug fixing?}}}
+\\ \\ For analysis view, we found the users, especially the beginners in using analysis tools felt the adjectives idea which determines how hard or easy to fix a particular bug is useful. Also, the numbers representation be useful for experts. Thereby, the metrics with popup of showing bug details will suffice. \\ \\
+
+For code view, users felt both designs, i.e., before/after with multiple windows and a single-window with table format, are novel and useful. However, almost all users preferred table view concerning the scalability issue and also easy to perceive in single glance. \\
+\end{myboxi}
+
+In the designs proposed, users felt it would be more useful if they can know tool names promptly, which found the bugs, although tool icons suffice and looks elegant. We find the examined solution ideas to be good enough to consider as a stepping stone in the development of multiple static analysis tool user interfaces.
 
 \let\cleardoublepage\clearpage
