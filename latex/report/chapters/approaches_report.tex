@@ -46,11 +46,11 @@ Here is an example of how the implementation approach could get started. \\ \\ \
 
 \subsection{RQ 1: How to Display the Results of the Same Codebase from Different Analysis Tools?} 
 
-
+\hfill \break
 \textbf{Solution ideas}: \\ 
 \begin{enumerate}
 \item  Display results separately for each tool.
-\item  Combine the results and mark its respective icon in a column to show which tool identifies the particular bug.
+\item  Combine the results and mark its respective icon in a column to show which tool identifies the particular bug. \\ \\
 \end{enumerate}
 
 With above-mentioned possible solution ideas derived after analysing the findings from other software engineering disciplines, i.e., Complex datasets and Issue tracker, two different prototypes are designed using a wireframe tool called Balsamiq \cite{B}. The design lessons adapted from these disciplines are extensibility of columns were integrating the complex datasets into a unified interface. Also, expressiveness concern tackled with issue tracker by having own dashboard instead of overwhelming the user with complete results which are not related to him. Assume the name \textit{toolShort} means a Static Analysis tool capable of giving results in a short time and \textit{toolLong} mean a Static Analysis tool gives results after a long time. \\ \\ 
@@ -58,7 +58,7 @@ With above-mentioned possible solution ideas derived after analysing the finding
 \clearpage
 
 \textbf{Prototype 1}:
-
+\\
 The prototype for solution idea, i.e., separately displaying the results is shown in the following \autoref{fig:toolSeperate}. \\ 
 
 \begin{figure}[hbt!]
@@ -69,8 +69,8 @@ The prototype for solution idea, i.e., separately displaying the results is show
 \end{figure}
 
 \textbf{Prototype 2}:
-
-The prototype for solution idea, i.e., combining the results is shown in the following \autoref{fig:toolCombine}. \\ \\
+\\
+The prototype for solution idea, i.e., combining the results is shown in the following \autoref{fig:toolCombine}. \\
 
 \begin{figure}[hbt!]
 	\centering
@@ -84,11 +84,11 @@ The prototype for solution idea, i.e., combining the results is shown in the fol
 Next, evaluate the designed prototypes as mentioned in Chapter \ref{ch:researchmethodology_report}. After evaluation, requirements are gathered based on user feedback and also new findings from the literature, if any. New designs are prototyped as mentioned above and repeats as per User Experience Design cycle. \\ \\
 
 \subsection{RQ 2: What Feedback Works to Know that Bug Fixing is On-going?}
-
+\hfill \break
 \textbf{Solution ideas}: \\
 \begin{enumerate}
 \item  User selects a bug and tries to fix it with some modifications in code and submit for analysis, and then the bug is shown as pending in status.
-\item  If the modified code fixes the reported bug, then it is shown as ‘fixed’ in status, or else, ‘try again’.
+\item  If the modified code fixes the reported bug, then it is shown as ‘fixed’ in status, or else, ‘try again’. \\ \\
 \end{enumerate}
 
 With the above mentioned possible solution ideas, we design the prototypes. The Prototype 1 design shown in \autoref{fig:d_pending} illustrates a bug being displayed as ‘pending’ in the status column of bug listing. This scenario happens when a user selects a bug and attempts to fix it then submit for analysis tools. Perhaps the shorter tool, i.e., the tool capable of analysing in less computation time would report back whether the bug got fixed or not. Thereby, the Prototype 2 design shown in \autoref{fig:d_tryagain} illustrates the bug is not fixed and shown as ‘try again’ in status column as the user attempted to fix earlier. \\ \\
@@ -98,7 +98,7 @@ Also, in Prototype 1, it is observed that ‘Fix Now’ button in ‘Bug Descrip
 \clearpage 
 
 \textbf{Prototype 1}
-
+\\
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/d_pending}
@@ -107,7 +107,7 @@ Also, in Prototype 1, it is observed that ‘Fix Now’ button in ‘Bug Descrip
 \end{figure}
 
 \textbf{Prototype 2}
-
+\\
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/d_tryagain}
@@ -120,11 +120,11 @@ Also, in Prototype 1, it is observed that ‘Fix Now’ button in ‘Bug Descrip
 Next, evaluate the designed prototypes as mentioned in Chapter \ref{ch:researchmethodology_report}. After evaluation, requirements are gathered based on user feedback and also new findings from the literature, if any. New designs are prototyped as mentioned above and repeats as per User Experience Design cycle. \\ \\
 
 \subsection{RQ 3: How to Carry Traceability of Bug Fixing?}
-
+\hfill \break
 \textbf{Solution ideas}: \\
 \begin{enumerate}
 \item  a timestamp for each bug fixing attempt with changes button
-\item  a Revert button
+\item  a Revert button \\ \\
 \end{enumerate}
 
 With the above mentioned possible ideas, we design the prototypes. The prototype, i.e., Prototype 1 design shown in \autoref{fig:d_changes} illustrates there is a timestamp for each bug fixing attempt which might help in the context of traceability as to know when someone is trying to mitigate a bug. Also, a button ‘Changes’ could perhaps show the code difference to the previous state of the codebase. The other prototype, i.e., Prototype 2 design shown in \autoref{fig:d_revert}, illustrates in a situation where the user wants to revert to the previous situation of the codebase. This functionality could perhaps help in a situation when modified code introduces new bugs with an attempt to fix a particular bug. \\ \\
@@ -134,6 +134,7 @@ Next, evaluate the designed prototypes as mentioned in Chapter \ref{ch:researchm
 \clearpage
 
 \textbf{Prototype 1}
+\\
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/d_changes}
@@ -142,6 +143,7 @@ Next, evaluate the designed prototypes as mentioned in Chapter \ref{ch:researchm
 \end{figure}
 
 \textbf{Prototype 2}
+\\
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=\linewidth]{figures/d_revert}
