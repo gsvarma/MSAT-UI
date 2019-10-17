@@ -15,6 +15,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{xcolor}
 \usepackage{pdfpages}
+\usepackage{emptypage}
 
 \colorlet{punct}{red!60!black}
 \definecolor{background}{HTML}{EEEEEE}
@@ -113,3 +114,11 @@
 		([xshift=-5pt]frame.south east);
 	},
 }
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
