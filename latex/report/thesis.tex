@@ -32,9 +32,9 @@
 
 % start with the titlepage, the formalities, and then the abstract
 \input{pretext/titlepage} % prints the title page
-\let\cleardoublepage\clearpage
+\cleardoublepage
 \input{pretext/erklaerung} % prints the statement that you worked on your own and did not commit plagiarism
-\clearpage
+\cleardoublepage
 
 \chapter*{Acknowledgement}
 
@@ -52,7 +52,7 @@ Last but not the least, thank you for everyone who blessed me with their words a
 \vspace*{\fill}
 %
 
-\clearpage
+\cleardoublepage
 
 \vspace*{\fill}
 \begin{abstract}
@@ -60,7 +60,7 @@ Last but not the least, thank you for everyone who blessed me with their words a
 \end{abstract}
 \acresetall
 \vspace*{\fill}
-\let\cleardoublepage\clearpage
+\cleardoublepage
 
 \tableofcontents % prints the table of contents
 
@@ -84,6 +84,7 @@ Last but not the least, thank you for everyone who blessed me with their words a
 \include{appendix}
 
 \addcontentsline{toc}{chapter}{List of Figures}
+\emptypage
 \listoffigures
 \cleardoublepage
 
@@ -94,7 +95,7 @@ Last but not the least, thank you for everyone who blessed me with their words a
 \addcontentsline{toc}{chapter}{Consent Form}
 \includepdf[pages=-, pagecommand=\thispagestyle{plain}]{consent.pdf}
 \cleardoublepage
-
+\emptypage
 \addcontentsline{toc}{chapter}{List of Designs}
 \includepdf[pages=-]{ux123.pdf}
 
