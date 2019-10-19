@@ -11,7 +11,7 @@
 [Document](https://github.com/gsvarma/SAT-Responsive/blob/master/latex/proposal/thesis.pdf) <br />
 
 ## Report
-[ Document ](https://github.com/gsvarma/MSAT-UI/blob/master/latex/report/thesis.pdf) in progress...
+[ Document ](https://github.com/gsvarma/MSAT-UI/blob/master/docs/report/MSAT-UI_Varma.pdf)
 
 ---
 
