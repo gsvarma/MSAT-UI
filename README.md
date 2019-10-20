@@ -1,9 +1,9 @@
 # Master Thesis
 
 **Title**: Integration of Multiple Static Analysis Tools in a Single Interface <br />
-**Author**: Sandeep Varma Ganaraju <br />
-**Advisors**: Prof. Dr. Eric Bodden, Dr.-Ing. Ben Hermann <br />
-[ *Unofficial* ] **Supervisor**: Ms Lisa Nguyen <br />
+**Author**: [Sandeep Varma Ganaraju](https://github.com/gsvarma) <br />
+**Advisors**: [Prof. Dr. Eric Bodden](https://github.com/ericbodden), [Dr.-Ing. Ben Hermann](https://github.com/bhermann) <br />
+[ *Unofficial* ] **Supervisor**: [Ms Lisa Nguyen](https://github.com/nguyenLisa) <br />
 
 ## Proposal 
 [Slides](https://github.com/gsvarma/MSAT-UI/blob/master/docs/slides/Proposal_presentation_MSAT-UI.pdf) <br />
@@ -11,7 +11,7 @@
 [Document](https://github.com/gsvarma/SAT-Responsive/blob/master/latex/proposal/thesis.pdf) <br />
 
 ## Report
-[ Document ](https://github.com/gsvarma/MSAT-UI/blob/master/latex/report/thesis.pdf) in progress...
+[ Document ](https://github.com/gsvarma/MSAT-UI/blob/master/docs/report/MSAT-UI_Varma.pdf)
 
 ---
 
