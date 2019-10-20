@@ -11,7 +11,8 @@
 [Document](https://github.com/gsvarma/SAT-Responsive/blob/master/latex/proposal/thesis.pdf) <br />
 
 ## Report
-[ Document ](https://github.com/gsvarma/MSAT-UI/blob/master/docs/report/MSAT-UI_Varma.pdf)
+[Slides](https://github.com/gsvarma/MSAT-UI/blob/master/docs/slides/Defence_presentation_MSAT-UI.pptx) <br />
+[ Document ](https://github.com/gsvarma/MSAT-UI/blob/master/docs/report/MSAT-UI_Varma.pdf) <br />
 
 ---
 
